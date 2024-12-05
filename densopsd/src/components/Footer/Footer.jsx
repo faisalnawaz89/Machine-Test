@@ -134,7 +134,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="footer--copyrights">
-            <p>© 2019 All Rights Reserved. Free html Templates</p>
+        <p>© 2025 Created by Faisal Nawaz</p>
         </div>
     </footer>
   )

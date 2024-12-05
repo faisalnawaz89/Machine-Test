@@ -91,7 +91,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="copyright">
-            <p>© 2025 All Rights Reserved. Design by Free Html Templates</p>
+          <p>© 2025 Created by Faisal Nawaz</p>
         </div>
     </footer>
   )

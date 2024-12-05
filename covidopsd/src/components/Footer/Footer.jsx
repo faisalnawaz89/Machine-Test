@@ -85,7 +85,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="prefooter">
-            <p>© 2020 All Rights Reserved. Design by Free Html Templates</p>
+            <p>© 2025 Created by Faisal Nawaz</p>
         </div>
     </div>
   )

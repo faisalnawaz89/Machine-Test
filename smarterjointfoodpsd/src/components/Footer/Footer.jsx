@@ -37,7 +37,7 @@ const Footer = () => {
     <div className="prefooter pre-footer">
         <div className="container">
             <div className="flex pre--footer--block">
-                <p>© Smarter Nutrition (Smarter Joint Food). All Rights Reserved.</p>
+                <p>© 2025 Created by Faisal Nawaz</p>
                 <ul>
                     <li><a href="#">Privacy Policy </a></li>
                     <li><a href="#">Terms And Conditions</a></li>
