@@ -1,0 +1,62 @@
+.grid.grid-center.why--choose--grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+.why--choose--us--box {
+    padding: 2.5rem 2.8125rem;
+    box-shadow: 0 0 20px 9px #0000000d;
+}
+
+.why--choose--us--box .flex{
+    align-items: center;
+}
+
+.why--choose--us--box span {
+    height: 3.125rem;
+    width: 3.125rem;
+    border: 0.125rem solid var(--primary-color);
+    border-radius: 50%;
+    line-height: 3.125rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.why--choose--us--box h5{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.why--choose--us--box p{
+    line-height: 1.5;
+    margin-top: 1.2rem;
+}
+
+.primary--color.why--choose--us--box{
+    background:var(--primary-color);
+}
+
+.primary--color.why--choose--us--box h5,
+.primary--color.why--choose--us--box p,
+.primary--color.why--choose--us--box span{
+    color: #fff;
+}
+
+.primary--color.why--choose--us--box span {
+    border-color: #fff;
+}
+
+@media (max-width:768px) {
+    .container {
+        margin: 0 4%;
+    }
+}
+
+@media (max-width:440px){
+    .grid.grid-center.why--choose--grid {
+        grid-template-columns: 100%;
+    }
+}

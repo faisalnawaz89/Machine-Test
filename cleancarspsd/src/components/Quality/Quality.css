@@ -1,0 +1,29 @@
+.quality--parallax--section.bg{
+    background-image: url(../Assets/quality-parralax.jpg);
+    width: 100%;
+    padding: 12rem 0;
+}
+
+.parallax--inner--content{
+    text-align: center;
+    padding: 0 10%;
+}
+
+.parallax--inner--content h4{
+    font-size: 1.875rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.parallax--inner--content p{
+    padding: 0 7%;
+    line-height: 1.5;
+}
+
+.parallax--inner--content .cta--btn a{
+    background: #fff;
+    color: var(--secondary-color);
+    margin-top: 2.5rem;
+    display: inline-block;
+}

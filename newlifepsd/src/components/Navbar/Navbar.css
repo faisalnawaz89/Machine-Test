@@ -1,0 +1,135 @@
+.header-block{
+    background: var(--secondary-color);
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.main--menu {
+    grid-template-columns: auto auto auto;
+    padding: 0 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main--menu nav ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.main--menu nav ul li a{
+    color: var(--text-white);
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
+    font-weight: 300;
+}
+
+.user--login {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    position: absolute;
+    right: 4.375rem;
+}
+
+.user--login li img{
+    width: 1.2rem;
+    position: relative;
+    top: 4px;
+}
+
+.tab-menu img{
+    width: 2rem;
+    cursor: pointer;
+}
+
+.user--login li a{
+    color: var(--primary-color);
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
+    font-weight: 300;
+}
+
+.logo {
+    width: 8.125rem;
+    height: 8.125rem;
+    margin: auto;
+    display: block;
+    background: var(--secondary-color);
+    position: relative;
+    top: 2.1875rem;
+    border-radius: 50%;
+}
+
+.logo a img{
+    margin: auto;
+    display: block;
+}
+
+@media (max-width:1440px) {
+    .main--menu nav ul {
+        gap: 4rem
+    }
+    .user--login {
+        gap: 2rem;
+        right: 3.375rem;
+    }
+}
+
+@media (max-width:1366px) {
+    .main--menu {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width:1140px) {
+    .main--menu nav ul {
+        gap: 3rem;
+    }
+    .user--login {
+        right: 2.375rem;
+    }
+    .logo a img {
+        width: 65%;
+    }
+
+}
+
+@media (max-width:768px) {
+    .main--menu nav ul li:not(.logo){
+        display: none;
+    }
+    .mobile--offcanvas {
+        display: block;
+        position: fixed;
+        height: 100%;
+        width: 0;
+        background: var(--secondary-color);
+        z-index: 999;
+        transition: all .2s ease-in;
+    }
+    .mobile--offcanvas.open {
+        width: 18.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .close--btn {
+        font-size: 2rem;
+        color: var(--text-white);
+        font-family: sans-serif;
+        position: fixed;
+        left: 0;
+        top: 0px;
+        margin: 1.5625rem;
+        cursor: pointer;
+    }
+    .mobile--offcanvas .logo{
+        display: none;
+    }
+    .mobile--offcanvas ul li a{
+        color: var(--text-white);
+        padding-bottom: 1rem;
+        display: block;
+    }
+}

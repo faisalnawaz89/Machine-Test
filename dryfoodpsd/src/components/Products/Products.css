@@ -1,0 +1,81 @@
+
+.page--title h2{
+    text-align: center;
+}
+
+.page--title .divider{
+    width: 90px;
+    height: 9px;
+    margin: auto;
+    background: var(--primary-color);
+}
+
+.product.product--block {
+    padding-top: 6.25rem;
+}
+
+.products--boxes{
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2rem;
+    padding: 0 9%;
+}
+
+.products--box{
+    box-shadow: 0 0 20px 15px #00000012;
+    padding: 25px 25px;
+}
+
+.product--name{
+    justify-content: space-between;
+    padding: 0.625rem 0;
+}
+
+.product--name h3{
+    font-size: 1.25rem;
+}
+
+.product--name h4{
+    font-size: 1.125rem;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.products--box a{
+    color: #ae4e0c;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem 0 0;
+}
+
+.products--container {
+    margin-top: 2.563rem;
+}
+
+.products--container .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.products--container .swiper-button-prev,
+.products--container .swiper-button-next {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #ffffff;
+    background: var(--primary-color);
+    padding: 1.25rem;
+}
+
+.products--container .swiper-button-prev:after, 
+.products--container .swiper-button-next:after {
+    font-size: 1rem;
+}
+
+@media (max-width:1440px) {
+    .products--boxes {
+        padding: 0 4%;
+    }
+}

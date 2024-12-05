@@ -1,0 +1,38 @@
+
+
+.grid.covid--poster--grid {
+    grid-template-columns: auto 1fr;
+    margin: 10% 17% 5%;
+    column-gap: 4rem;
+    align-items: center;
+}
+
+.covid--poster--content p{
+    margin-bottom: 4.375rem;
+}
+
+@media (max-width:1024px) {
+    .grid.covid--poster--grid {
+        margin: 35% 17% 5%;
+    }
+}
+
+@media (max-width:768px) {
+    .grid.covid--poster--grid {
+        margin: 12% 7% 12%;
+    }
+    .grid.covid--poster--grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:440px){
+    .grid.covid--poster--grid {
+        grid-template-columns: 100%;
+        gap: 5rem;
+    }
+    .covid--poster--content h3,
+    .covid--poster--content p{
+        text-align: center;
+    }
+}

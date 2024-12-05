@@ -1,0 +1,138 @@
+.footer-block{
+    background: var(--secondary-color);
+}
+
+.main--footer {
+    padding:5% 10% 3%;
+}
+
+.footer--grid {
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer--info h4{
+    color: var(--text-white);
+    font-size: clamp(1rem, 1.563vw, 1.563rem);
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 1.5625rem;
+}
+
+.footer--info h4::before{
+    content: '';
+    position: absolute;
+    width: calc(100% - 5rem);
+    background: var(--primary-color);
+    height: 2px;
+    bottom: -4px;
+}
+
+.footer--info:nth-child(even) {
+    margin-top: 1.875rem;
+}
+
+.footer--info ul li a{
+    color: var(--text-white);
+    font-size: clamp(.875rem, 1vw, 1rem);
+    font-weight: 300;
+    display: block;
+    margin-bottom: 0.625rem;
+}
+
+.socila--icons ul{
+    display: flex;
+    gap: .5rem;
+}
+
+.socila--icons ul li a{
+    background: var(--text-white);
+    display: flex;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.grid.footer--social {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 2rem 0 0;
+}
+
+.flex.newslatter--block {
+    align-items: center;
+    gap: 2rem;
+}
+
+.newslatter-grid {
+    gap: .7rem;
+}
+
+.flex.newslatter--block h5{
+    color: var(--text-white);
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.newslatter-grid input{
+    height: 2.125rem;
+    padding: 0 1.125rem;
+    border: 0;
+    outline: 0;
+}
+
+.newslatter-grid button{
+    background: #ef3c3d;
+    border: 0;
+    color: var(--text-white);
+    text-transform: uppercase;
+    font-size: .675rem;
+    padding: 0 2rem;
+}
+
+.footer--copyright{
+    background: var(--text-white);
+    text-align: center;
+    padding: .875rem 0;
+}
+
+@media (max-width:1440px) {
+    .footer--info h4::before {
+        width: calc(100% - 1rem);
+    }
+}
+
+@media (max-width:1024px) {
+    .footer--grid {
+        grid-gap: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .footer--grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:440px) {
+    .grid.footer--social {
+        grid-template-columns: 100%;
+        grid-gap: 2rem;
+    }
+    .socila--icons ul {
+        justify-content: center;
+    }
+    .flex.newslatter--block {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .main--footer {
+        padding: 15% 10% 15%;
+    }
+    .footer--copyright p {
+        font-size: .875rem;
+    }
+}
+

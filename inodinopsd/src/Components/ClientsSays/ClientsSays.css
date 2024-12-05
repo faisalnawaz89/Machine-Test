@@ -1,0 +1,78 @@
+.client--says--img img {
+    width: 10rem;
+}
+
+.client--says--block{
+    grid-template-columns: auto 44%;
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.client--says--block:nth-child(odd){
+    justify-content: flex-end;
+}
+.client--says--block:not(:nth-child(4)){
+    margin-bottom: 5rem;
+}
+.client--says--block .cta--btn{
+    position: absolute;
+    right: 13.5rem;
+    bottom: auto;
+    margin-top: -8.125rem;
+}
+
+.client--says--title h5{
+    font-size: 1.063rem;
+    font-family: var(--font2);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.3125rem;
+}
+
+.client--says--title p {
+    color: #191919;
+}
+
+.client--says--img{
+    position: relative;
+}
+
+.client--says--img::after{
+    content: '';
+    position: absolute;
+    background-image: url(../Assets/qoute_icon.png);
+    background-repeat: no-repeat;
+    bottom: -0.625rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    left: calc(100% - 5.4375rem);
+    right: 0;
+}
+
+@media (max-width:768px) {
+    .client--says--block .cta--btn {
+        right: 1rem;
+    }
+}
+
+@media (max-width:440px) {
+    .client--says--block:nth-child(odd) {
+        justify-content: flex-start;
+    }
+    .client--says--block {
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    .client--says--block .cta--btn {
+        position: static;
+        margin-top: 2.75rem;
+    }
+    .client--says--img {
+        position: relative;
+        margin: auto;
+    }
+    .client--says--block:not(:nth-child(4)) {
+        margin-bottom: 3rem;
+    }
+}

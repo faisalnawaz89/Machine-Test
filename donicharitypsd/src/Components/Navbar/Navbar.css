@@ -1,0 +1,123 @@
+.logo {
+    width: 8.765464rem;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+.grid.navigation--bar {
+    position: relative;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: 104px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.menu.main--menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.menu.main--menu ul li a{
+    font-family: var(--font3);
+    font-size: 1.063rem;
+    text-transform: uppercase;
+    color: #727272;
+}
+
+.flex.donate--btn {
+    position: absolute;
+    right: 0;
+}
+
+.donate--btn a{
+    border: 2px solid var(--secondary-color);
+    padding: 0.5rem 1.25rem;
+    font-family: var(--font3);
+    font-size: 1.063rem;
+    text-transform: uppercase;
+    color: #727272;
+}
+
+.donate--btn a span:nth-child(1){
+    display: none;
+}
+
+@media (max-width:1366px) {
+    nav.menu.main--menu ul {
+        gap: 3rem;
+    }
+}
+
+@media (max-width:992px) {
+    .flex.donate--btn {
+        right: -1.5rem;
+    }
+}
+
+@media (max-width:768px) {
+
+    .donate--btn a span:nth-child(2){
+        display: none;
+    }
+    .main--menu{
+        display: none;
+    }
+    .donate--btn a span:nth-child(1){
+        display: block;
+    }
+    .mobile--menu--icon{
+        display: block;
+        text-align: right;
+        margin-right: 1.5625rem;
+        cursor: pointer;
+    }
+    .flex.donate--btn {
+        position: static;
+    }
+    .mobile--menu--block ul {
+        text-align: center;
+    }
+    .mobile--menu--block ul li a{
+        display: block;
+        color: var(--primary-color);
+
+    }
+    .mobile--menu--block ul li{
+        margin-bottom: 0.625rem;
+    }
+    .mobile--menu--block ul li:nth-child(6),
+    .mobile--menu--block ul li:nth-child(7){
+        margin-bottom: 0rem;
+    }
+    .mobile--menu--block {
+        position: relative;
+        background: #eee;
+        padding: 1.25rem 0.625rem;
+        border-radius: 0.625rem;
+        box-shadow: 0 0 0.1875rem 0px #00000045;
+        margin-bottom: 1.25rem;
+    }
+    span.flex.search--bar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0.9375rem;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:440px) {
+    .logo {
+        width: 5rem;
+    }
+    .grid.navigation--bar {
+        grid-template-rows: 50px;
+    }
+    .donate--btn a {
+        border: 0;
+        padding: 0;
+    }
+}

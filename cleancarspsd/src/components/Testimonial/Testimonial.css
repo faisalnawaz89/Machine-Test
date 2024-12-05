@@ -1,0 +1,36 @@
+.testimonial--box{
+
+}
+
+.testimonial--box img{
+    width: auto;
+}
+
+.testimonial.testimonial--block {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 45px;
+    box-shadow: 0 0 20px 9px #0000000d;
+}
+
+.flex-column{
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.testimonial--block p{
+    line-height: 1.5;
+}
+
+.testimonial--block h6{
+    color: var(--secondary-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.testimonial--block span{
+    color: var(--primary-color);
+    font-size: .875rem;
+    position: relative;
+    top: -10px;
+}

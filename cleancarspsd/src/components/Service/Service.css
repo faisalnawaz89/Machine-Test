@@ -1,0 +1,74 @@
+.service--box {
+    box-shadow: 0px 0px 0.9375rem 0.625rem #00000008;
+    padding-bottom: 3.125rem;
+}
+
+.service--grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.page--main--title{
+    padding: 5rem 0;
+}
+
+.page--main--title h2{
+    text-align: center;
+    font-size: clamp(1.7rem, 2.5vw, 2.5rem);
+    padding: 0 10%;
+}
+
+.page--main--title h2 span{
+    color: var(--primary-color);
+}
+
+.divider{
+    width: 5.625rem;
+    height: 0.5rem;
+    border-radius: 1.5625rem;
+    background: var(--secondary-color);
+    margin: 1% auto 0;
+}
+
+.service--box h3{
+    color: var(--secondary-color);
+    font-size: 1.875rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.service--box p{
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 2rem;
+}
+.service--box .cta--btn {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.service--box .cta--btn a {
+    padding: 0.625rem 1.375rem;
+}
+
+@media (max-width:1024px) {
+    .service--grid {
+        align-items: baseline;
+    }
+}
+
+@media (max-width:768px) {
+    .service--grid,
+    .grid.grid-center.why--choose--grid {
+        grid-gap: 15px;
+    }
+}
+
+@media (max-width:440px) {
+    .service--grid {
+        grid-template-columns: 100%;
+    }
+    .page--main--title {
+        padding: 5rem 0 2rem;
+    }
+}

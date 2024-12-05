@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 16px;
+    --font1: "Poppins", serif;
+    --font2: "Righteous", serif;
+    --container-padding:0 15px;
+    --primary-color: #02d163;
+    --secondary-color: #303036;
+    --text-white:#fff;
+}
+
+body{
+    font-family: var(--font1);
+    line-height: 1.5;
+}
+
+h1{
+    font-size: clamp(2.5rem, 3.75vw, 3.75rem);
+    color: var(--text-white);
+    font-family: var(--font2);
+}
+
+h2, h3, h4, h5{
+    font-family: var(--font1);
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+p{
+    margin: 0;
+    color: #666666;
+    font-size: 1.063rem;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+.grid{display: grid;}
+.flex{display: flex;}
+.flex-center, .frid-center{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta--btn a{
+    background: var(--primary-color);
+    color: var(--text-white);
+    font-size: 0.875rem;
+    padding: 0.75rem 2.8125rem 0.75rem 2.8125rem;
+}
+
+.cta--btn a.light--btn{
+    background: var(--text-white);
+    color: var(--secondary-color);
+}
+
+.cta--btn a.dark--btn{
+  background: var(--secondary-color);
+  color: var(--text-white);
+}
+
+.primary--color{
+  background: var(--primary-color)!important;
+}
+
+.mobile--offcanvas{
+  display: none;
+}
+
+@media (max-width:1140px) {
+  :root{
+    font-size: 14px;
+  }
+}
+
+@media (max-width:440px) {
+    .cta--btn a {
+      padding: 0.75rem 1.8125rem 0.75rem 1.8125rem;
+  }
+}
+
+

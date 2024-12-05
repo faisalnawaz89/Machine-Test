@@ -1,0 +1,51 @@
+.newsletter--bg{
+    background-image: url(../Assets/case2.jpg);
+    width: 100%;
+    height: 16.25rem;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.newsletter.newsletter-block .corona--prevent--heading{
+    margin-bottom: 5rem;
+}
+
+form.form--container {
+    width: calc(100% - 50rem);
+}
+
+.form--container input{
+    border: 1px solid #fff;
+    background: transparent;
+    width: 100%;
+    height: 3.75rem;
+    border-radius: 4.375rem 4.375rem;
+    padding: 0 30px;
+    color: #fff;
+    outline: 0;
+}
+
+.form--container .btn--theme{
+    border-radius: 1.5625rem;
+    padding: 1.125rem 5.3125rem;
+    display: inline-block;
+    margin-top: 1.875rem;
+}
+
+@media (max-width:1440px) {
+    form.form--container {
+        width: calc(100% - 25rem);
+    }
+}
+
+@media (max-width:440px) {
+    .newsletter.newsletter-block .corona--prevent--heading {
+        margin-bottom: 2rem;
+    }
+    form.form--container {
+        width: calc(100% - 4rem);
+    }
+}

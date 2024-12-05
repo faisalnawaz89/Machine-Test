@@ -1,0 +1,80 @@
+.patient--care--grid {
+    grid-template-columns: 1fr 50%;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+    padding: 5% 15% 5% 4%;
+    text-align: right;
+}
+
+.patient--care--img {
+    width: 590px;
+}
+
+.patient--care--img img{
+    width: 100%;
+    border-right: 20px solid var(--primary-color);
+    border-left: 20px solid var(--primary-color);
+}
+
+.patientcare-block{
+    position: relative;
+}
+
+.patient--care--bg{
+    background-image: url(../Assets/patient_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.patient--care--bg::before{
+    content:'';
+    position: absolute;
+    inset: 0;
+    background: #303137;
+    opacity: 1;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
+.white--title .page--main--title h4,
+.white--title .page--main--title h3,
+.white--title .page--main--title p {
+    color: var(--text-white);
+}
+
+@media (max-width:1366px) {
+    .patient--care--grid {
+        grid-template-columns: 1fr 40%;
+        gap: 3rem;
+    }
+}
+@media (max-width:1140px) {
+    .patient--care--img img {
+        width: 75%;
+        float: left;
+    }
+}
+
+@media (max-width: 1024px) {
+    .patient--care--grid {
+        grid-template-columns: auto 35%;
+        gap: 0rem;
+    }
+}
+
+@media (max-width:768px) {
+    .patient--care--grid {
+        grid-template-columns: 100%;
+        gap: 2rem;
+        padding: 5% 4% 5% 4%;
+        text-align: left;
+    }
+    .patient--care--img {
+        width: 100%;
+    }
+    .patient--care--img img {
+        width: 100%;
+        float: none;
+    }
+}

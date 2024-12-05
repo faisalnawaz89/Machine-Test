@@ -1,0 +1,128 @@
+.main--footer {
+    background: #252525;
+}
+
+.main--footer--content {
+    grid-template-columns: auto auto auto auto;
+    padding: 0 15%;
+    grid-gap: 4rem;
+}
+
+.newslatter--block{
+    width: 992px;
+    margin: auto;
+}
+
+.newslatter.newslatter--block {
+    padding: 3rem 0 4rem 0;
+}
+
+.newslatter--block input{
+    position: relative;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--primary-color);
+    height: 40px;
+    background: transparent;
+    outline: 0;
+}
+
+.newslatter--block button{
+    position: absolute;
+    margin-left: -5.625rem;
+    margin-top: 0.5rem;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1rem;
+    font-family: var(--font1);
+    cursor: pointer;
+}
+
+.insta--feed img{
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+}
+
+.footer--link h4 {
+    font-size: 1.25rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 1.375rem;
+}
+
+.insta--feed {
+    gap:1rem;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.footer--link ul li a,
+.footer--link p,
+.insta--feed h5{
+    font-size: 1.063rem;
+    color: #727272;
+    font-weight: 400;
+}
+
+.footer--link p{
+    width: 8rem;
+}
+
+.flex.address--icon {
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.flex.address--icon h5{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.footer--link .flex.social--icons {
+    justify-content: left;
+}
+
+.footer--copyright{
+    background: #fff;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.footer--copyright p{
+    text-align: center;
+    color: #727272;
+}
+
+@media (max-width:1024px) {
+    .newslatter--block {
+        width: 44.25rem;
+    }
+    .main--footer--content {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width:768px) {
+    .main--footer--content {
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:440px) {
+    .newslatter--block {
+        width: 80%;
+    }
+    .main--footer--content {
+        grid-template-columns: 100%;
+        padding: 0 10%;
+    }
+    .footer--copyright p {
+        font-size: .625rem;
+    }
+}

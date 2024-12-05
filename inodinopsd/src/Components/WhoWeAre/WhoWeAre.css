@@ -1,0 +1,29 @@
+.who--we--are .page--title {
+    position: relative;
+}
+
+.who--we--are .bg{
+    background-image: url(../Assets/parallax_bg.jpg);
+}
+
+.who--we--are .page--title h2,
+.who--we--are .page--title p{
+    color: #fff;
+}
+
+.who--we--are--inner{
+    position: relative;
+    z-index: 9;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.who--we--are--content{
+    padding: 1.875rem 15% 0;
+}
+
+@media (max-width:440px) {
+    .who--we--are--content {
+        padding: 1.875rem 4% 0;
+    }
+}

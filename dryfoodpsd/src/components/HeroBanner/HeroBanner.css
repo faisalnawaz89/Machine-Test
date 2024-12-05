@@ -1,0 +1,47 @@
+.hero-banner .bg{
+    background-image: url(../Assets/food-banner.png);
+}
+
+.hero-banner{
+    position: relative;
+}
+
+.banner--title h1{
+    font-size: clamp(4rem, 7vw, 7rem);
+    font-family: var(--font2);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.banner--title .cta--btn a{
+    padding: 1.25rem 0px 1.25rem 0rem;
+    background: #fff;
+    position: relative;
+    z-index: 9;
+    color: #000;
+    font-family: var(--font2);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    margin: auto;
+    max-width: 19rem;
+    display: block;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+@media (max-width:440px) {
+    .banner--title h1 {
+        line-height: 1;
+        text-align: center;
+    }
+    .banner--title .cta--btn a {
+        padding: 1rem 0px 1rem 0rem;
+        font-size: 1rem;
+        max-width: 12rem;
+    }
+}

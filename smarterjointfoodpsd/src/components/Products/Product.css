@@ -1,0 +1,110 @@
+.product--title h2{
+    font-size: clamp(2rem, 3vw, 3rem);
+    color: var(--font-title-color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product--title h4{
+    color: #99c523;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.product--title p{
+    text-align: center;
+    color: #7c7878;
+    line-height: 2;
+    padding: 0 13rem;
+}
+
+.products--container{
+    grid-template-columns: auto auto auto; 
+    grid-gap: 4rem;
+}
+
+img.product--img {
+    margin: auto;
+}
+
+img.product--img, .product--icon {
+    width: auto;
+}
+
+.icon--title--flex{
+    gap: 14px;
+    justify-content: start;
+    align-items: center;
+    margin-top: .1875rem;
+}
+
+.product--box h3{
+    font-size: 1rem;
+    color: var(--font-title-color);
+}
+.product--box p{
+    color: #27294a;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.product--big-box{
+    grid-row: 2 / span 2;
+    grid-column: 3 / span 1;
+}
+
+.product--view{
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    color: #99c523;
+    text-transform: uppercase;
+    gap: 12px;
+}
+
+.buynow--btn{
+    background: linear-gradient(269deg, rgba(113, 154, 17, 1) 0%, rgba(77, 116, 1, 1) 90%);
+    border: 0.125rem solid #719a11;
+    padding: 1.5rem 1.875rem 1.5rem 1.875rem;
+    border-radius: 3.125rem 3.125rem;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-family: var(--font1);
+    max-width: 11.875rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 5rem auto;
+}
+
+@media (max-width:1024px) {
+    .products.products-block {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width:768px){
+    .products--container {
+        grid-template-columns: auto auto;
+    }
+    .product--big-box {
+        grid-row: 3 / span 3;
+        grid-column: 1 / span 1;
+    }
+}
+
+@media (max-width:440px) {
+    .product--title p {
+        padding: 0px 0rem;
+    }
+    .products--container {
+        grid-template-columns: 100%;
+    }
+    .product--big-box {
+        grid-row: 8 / span 3;
+    }
+}

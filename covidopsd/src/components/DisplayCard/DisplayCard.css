@@ -1,0 +1,110 @@
+.grid.card-grid {
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.card.card--block {
+    background: #fff;
+    padding: 6rem 95px;
+    margin: -5% 10%;
+    position: relative;
+    border-radius: 50px 50px;
+    box-shadow: -1px 12px 17px 0px #0000001a;
+}
+
+.cta--btn .btn--theme{
+    background: var(--secondary-color);
+}
+
+.divider {
+    background: var(--primary-color);
+    width: 4.1875rem;
+    height: 0.5rem;
+    border-radius: 1.5625rem;
+}
+
+.card--content h2 {
+    text-transform: capitalize;
+}
+
+.card--content p{
+    margin-top: 1.5625rem;
+    margin-bottom: 4rem;
+}
+
+.big--covid--img {
+    position: relative;
+    width: 55%;
+    margin: auto;
+}
+
+.small--covid--img{
+    background-image: url(../Assets/covidpng.png);
+    width: 5.375rem;
+    height: 7.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 1.25rem;
+    left: auto;
+    right: auto;
+    margin-left: 4.375rem;
+}
+
+@media (max-width:1024px) {
+    .card.card--block {
+      padding: 6rem 4.0625rem;
+      margin: -25% 10%;
+    }
+    .covid--poster--content p {
+      margin-bottom: 2.5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .card.card--block {
+        margin: 0% 10%;
+    }
+    .big--covid--img {
+        width: 94%;
+    }
+    .small--covid--img {
+        left: 40%;
+    }
+}
+
+@media (max-width:440px) {
+    .grid.card-grid {
+        grid-template-columns: 100%;
+        gap: 5rem;
+    }
+    .card--content {
+        order: 2;
+    }
+    .small--covid--img {
+        left: 10%;
+        top: 2.875rem;
+        margin-left: 0;
+    }
+    .card.card--block {
+        margin: 0% 0%;
+        box-shadow: none;
+    }
+    .card.card--block {
+        padding: 1rem 2.0625rem;
+    }
+    .big--covid--img {
+        width: 75%;
+    }
+    .card--content h2,
+    .card--content p {
+        text-align: center;
+    }
+    .divider {
+        margin: 8px auto 0;
+    }
+    .cta--btn {
+        text-align: center;
+    }
+}

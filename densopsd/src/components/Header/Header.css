@@ -1,0 +1,151 @@
+.main-header{
+    background: #3cb878e0;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+.grid.pre-header-block {
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo{
+    width: auto;
+}
+
+.icon-bg{
+    background-repeat: no-repeat;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-size: cover;
+}
+
+.call--icon{
+    background-image: url(../Assets/call-icon.png);
+}
+
+.email--icon{
+    background-image: url(../Assets/email-icon.png);
+}
+
+.icons a {
+    display: flex;
+    gap: .5rem;
+}
+
+.icons a h4{
+    font-size: 1.063rem;
+    font-weight: 300;
+    color: #fff;
+    font-family: var(--primary-font);
+}
+
+.search--bar{
+    position: relative;
+}
+
+.serach--bar--input{
+    outline: 0;
+    border: 0;
+    padding: 0.5rem 2.5rem;
+}
+
+.search--icon{
+    position: absolute;
+    background-image: url(../Assets/search-icon.png);
+    width: 1.25rem;
+    height: 1.25rem;
+    right: 0.625rem;
+    top: 0.1875rem;
+}
+
+.navigation--menu {
+    background: var(--secondary-color);
+}
+
+.navigation--menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation--menu ul li a{
+    font-size: 1.063rem;
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 1rem 0.875rem;
+    display: block;
+}
+
+.navigation--menu ul li a.active{
+    background: #36a46d;
+    color: #fff;
+}
+
+@media (max-width:1024px) {
+    .search--icon {
+        width: 1rem;
+        height: 1rem;
+        top: 0.4rem;
+        background-size: 125%;
+    }
+}
+
+@media (max-width:768px){
+    .navigation--menu ul li a {
+        font-size: .875rem;
+    }
+    .logo {
+        width: auto;
+        grid-area: 4 / span 1;
+    }
+    .icons a h4 {
+        font-size: .875rem;
+    }
+    .grid.pre-header-block {
+        padding: .5rem 0;
+    }
+}
+
+@media (max-width:440px){
+    .serach--bar--input {
+        width: 30px;
+        height: 30px;
+        padding: 0;
+    }
+    .logo {
+        width: auto;
+        grid-area: 4 / span 1;
+    }
+    .navigation--menu{
+        display: none;
+    }
+    .mobile--menu{
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 30px;
+        cursor: pointer;
+    }
+    .main-header {
+        position: static;
+    }
+    .mobile--menu--block{
+        background: var(--secondary-color);
+        text-align: center;
+    }
+    .mobile--menu--block ul {
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .mobile--menu--block ul li a{
+        color: #fff;
+        text-transform: uppercase;
+    }
+}
+

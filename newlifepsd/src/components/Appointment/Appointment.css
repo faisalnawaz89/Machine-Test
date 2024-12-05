@@ -1,0 +1,49 @@
+.appointment-block{
+    background: var(--primary-color);
+    border-top: 1px solid var(--secondary-color);
+}
+.appointment--grid{
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 15%;
+    grid-gap: 6rem;
+}
+
+.white--text.page--main--title h4{
+    color: var(--text-white);
+}
+
+.white--text.page--main--title h3{
+    margin: 0;
+}
+
+.appointment-block a{
+    padding: 1.25rem 5.625rem 1.25rem 5.625rem;
+}
+
+@media (max-width:1440px) {
+    .appointment--grid {
+        grid-gap: 1rem;
+    }
+    .appointment-block a {
+        padding: 1.25rem 4.625rem 1.25rem 4.625rem;
+    }
+}
+
+@media (max-width:768px) {
+    .appointment--grid {
+        padding: 16px 4%;
+    }
+}
+
+@media (max-width:440px) {
+    .appointment--grid {
+        grid-template-columns: 100%;
+        grid-gap: 2rem;
+    }
+    .appointment--grid {
+        padding: 2.1875rem 4% 3.125rem;
+        text-align: center;
+    }
+}

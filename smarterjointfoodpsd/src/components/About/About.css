@@ -1,0 +1,134 @@
+.about-block{
+    background: #27294a;
+    padding: 5rem 0;
+}
+
+.about--grid{
+    grid-template-columns: 55% 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about--collage-images{
+    flex-wrap: wrap;
+}
+
+.img-cell{
+    position: relative;
+}
+
+.img-cell::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #27294a;
+    opacity: .8;
+    z-index: 9;
+}
+
+.img-cell img{
+    position: relative;
+    border-radius: 25px;
+    filter: grayscale(1);
+}
+
+.img-cell:nth-child(1) img{
+    width: 90%;
+}
+
+.img-cell:nth-child(2) img{
+    width: 96%;
+}
+
+.img-cell:nth-child(4) img{
+    width: 82%;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.about--content h2{
+    font-size: clamp(2rem, 3vw, 3rem);
+    color: #fff;
+}
+
+.about--content h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #9ac623;
+    padding: 20px 0;
+}
+
+.about--content p{
+    font-size: 14px;
+    color: #ababab87;
+    line-height: 2;
+}
+
+.about-btn{
+    background: linear-gradient(269deg, rgba(113, 154, 17, 1) 0%, rgba(77, 116, 1, 1) 90%);
+    border: 2px solid #719a11;
+    padding: 15px 35px 15px 35px;
+    border-radius: 25px 25px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: var(--font1);
+    min-width: 180px;
+    margin-top: 35px;
+}
+
+@media (max-width:1440px) {
+    .blank {
+        display: none;
+    }
+    .doctor--block--grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .doctor--block-content {
+        margin-left: 106px;
+    }
+}
+
+@media (max-width:1024px) {
+    .about--grid {
+        grid-template-columns: 30% 1fr;
+    }
+    .about--collage-images {
+        flex-wrap: wrap;
+        gap: 1.25rem;
+    }
+    .img-cell:nth-child(1) img {
+        width: 47%;
+    }
+    .img-cell:nth-child(2) img {
+        width: 47%;
+    }
+    .img-cell:nth-child(3) img {
+        width: 47%;
+    }
+    .img-cell:nth-child(4) img {
+        width: 60%;
+        margin: 0;
+        margin-left: 0;
+    }
+}
+
+@media (max-width:440px) {
+    .about--grid {
+        grid-template-columns: 100%;
+    }
+    .about--collage-images {
+        flex-wrap: nowrap;
+    }
+    .img-cell:nth-child(1) img,
+    .img-cell:nth-child(2) img,
+    .img-cell:nth-child(3) img,
+    .img-cell:nth-child(4) img {
+        width: 100%;
+    }
+    .img-cell img {
+        border-radius: 0;
+    }
+}

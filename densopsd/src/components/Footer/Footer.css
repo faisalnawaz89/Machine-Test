@@ -1,0 +1,119 @@
+.pre--footer--block {
+    background: var(--secondary-color);
+    padding: 1rem;
+}
+
+.pre--footer--grid{
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer--call--icon img{
+    width: 1.5rem;
+    border: 1px solid #fff;
+    padding: 3px;;
+}
+
+.pre--footer--grid a{
+    gap: .5rem;
+    color: #fff;
+}
+
+.pre--footer--grid a h5{
+    font-family: var(--primary-font);
+    font-size: 1.063rem;
+    font-weight: 300;
+}
+
+.main--footer {
+    background: var(--primary-color);
+    padding: 4rem 0;
+}
+
+.grid.footer-grid {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: baseline;
+    column-gap: 5rem;
+}
+
+.grid.footer--info--links {
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    grid-gap: 2rem;
+    align-items: center;
+}
+
+.footer--link h3{
+    font-size: 1.063rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+
+.footer--link ul li a{
+    color: #fff;
+    margin-bottom: 0.625rem;
+    display: block;
+}
+
+.footer-info p{
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer-info:not(:last-child) {
+    border-right: 1px solid #fff;
+    padding-right: 30px;
+}
+
+.social--icons ul{
+    display: flex;
+    gap: .5rem;
+    margin-top: 2rem;
+}
+
+.social--icons ul li a{
+    background: #fff;
+    display: flex;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.footer--copyrights{
+    background: var(--secondary-color);
+    padding: 1rem 0;
+}
+
+.footer--copyrights p{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media (max-width:440px) {
+    .pre--footer--grid {
+        grid-template-columns: 100%;
+        grid-gap: 1.5rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .pre--footer--grid a {
+        justify-content: flex-start;
+    }
+    .grid.footer-grid {
+        grid-template-columns: 100%;
+        grid-gap: 3rem;
+    }
+    .footer-info:not(:last-child) {
+        border-right: 0;
+        padding-right: 0;
+    }
+    .grid.footer--info--links {
+        justify-content: space-around;
+        grid-gap: 1rem;
+    }
+}

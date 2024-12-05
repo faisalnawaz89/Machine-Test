@@ -1,0 +1,212 @@
+.bg--outline{
+    background-image: url(../assets/large-bone.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.dr-bg-img{
+    position: relative;
+    background-image: url(../assets/layer-bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.dr-bg-img{
+    position: relative;
+}
+
+.dr-bg-img img.product-img{
+    width: 705px;
+    position: absolute;
+    bottom: 0;
+    left: -79px;
+}
+.hero--banner{
+    grid-template-columns: 50% 50%;
+    min-height: 840px;
+    position: relative;
+}
+
+.hero-banner-content-block{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 20rem;
+}
+
+
+.badge-block{
+    position: absolute;
+    top: 63%;
+    left: 35%;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.badge-block h4{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+.badge-block img{
+    width: auto;
+}
+
+img.play-btn {
+    width: auto;
+    position: absolute;
+    top: 33%;
+    left: 24%;
+}
+
+h1.big--title {
+    font-size: clamp(3rem, 4vw, 4rem);
+    color: var(--font-title-color);
+    margin-bottom: 2.5rem;
+    font-weight: 800;
+}
+
+.banner-title-cell p{
+    color: var(--font-para-color);
+    font-size: 1.125rem;
+}
+
+.grid-col-4{
+    grid-template-columns: 12.5rem 12.5rem;
+    justify-content: start;
+    column-gap: 3.125rem;
+    margin-bottom: 2rem;
+}
+
+.title--points {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.title-text p {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--font-title-color);
+    font-weight: 700;
+}
+
+.cta--button {
+    gap: 25px;
+}
+
+.cta--button button{
+    background: linear-gradient(269deg, rgba(113, 154, 17, 1) 0%, rgba(77, 116, 1, 1) 90%);
+    border: 2px solid #719a11;
+    padding: 15px 35px 15px 35px;
+    border-radius: 25px 25px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: var(--font1);
+    min-width: 180px;
+}
+
+.primary-cta-button{
+    background: transparent!important;
+    color: #719a11!important;
+}
+
+@media (max-width:1440px) {
+    .hero-banner-content-block {
+        margin-top: 10rem;
+    }
+    .bg--outline {
+        background-size: 80%;
+        background-position: left top;
+    }
+    .hero--banner {
+        grid-template-columns: 45% 55%;
+        min-height: 47.5rem;
+    }
+    .dr-bg-img {
+        background-size: 100%;
+    }
+    .dr-bg-img img.product-img {
+        width: 39.375rem;
+        bottom: 50px;
+        left: -125px;
+    }
+    .banner-title-cell p {
+        max-width: 25rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width:1024px) {
+    .bg--outline {
+        background-size: 100%;
+    }
+    .dr-bg-img {
+        background-size: 130%;
+    }
+    .dr-bg-img img.product-img {
+        left: -13px;
+    }
+    img.play-btn {
+        top: 20%;
+        left: 50%;
+    }
+    .badge-block {
+        top: 54%;
+        left: 50%;
+    }
+}
+
+@media (max-width:768px) {
+    .grid-col-4 {
+        grid-template-columns: 100%;
+    }
+    .cta--button {
+        gap: 0.5rem;
+        flex-direction: column;
+        margin-top: 5.625rem;
+    }
+    .dr-bg-img img.product-img {
+        width: 30.375rem;
+        bottom: 13.75rem;
+    }
+    .hero--banner {
+        min-height: 54.5rem;
+    }
+
+}
+
+@media (max-width:440px){
+    .bg--outline {
+        display: none;
+    }
+    .hero--banner {
+        grid-template-columns: 100%;
+    }
+    h1.big--title {
+        font-size: clamp(2rem, 4vw, 4rem);
+        text-align: center;
+    }
+    .title--points {
+        justify-content: end;
+    }
+    .dr-bg-img img.product-img {
+        width: 20.375rem;
+        bottom: 15.75rem;
+    }
+    .play--btn-widget {
+        display: none;
+    }
+    .banner-title-cell p {
+        max-width: 100%;
+        line-height: 1.5;
+        text-align: center;
+    }
+}

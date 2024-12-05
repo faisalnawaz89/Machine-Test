@@ -1,0 +1,233 @@
+.hero-banner{
+    background: var(--bg-color);
+    padding-top: 5rem;
+}
+
+.grid.hero-banner-block {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content-block h1{
+    font-size: clamp(2rem, 6vw, 6rem);
+}
+
+.hero-content-block h1 span{
+    background: var(--bg-color-secondary);
+    color: #fff;
+    border-radius: 50%;
+    width: 8rem;
+    line-height: 8rem;
+    display: inline-flex;
+    justify-content: space-around;
+    position: relative;
+    left: -2%;
+}
+
+
+.hero-content-block h2{
+    font-size: clamp(3rem, 4vw, 4rem);
+    text-transform: uppercase;
+    padding: 2rem 0;
+}
+
+.hero--bottom-cta button{
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 1.4375rem 3.125rem 1.375rem 3.125rem;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    transition: all .2s ease-in;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.video--block img{
+    width: auto;
+}
+
+.hero--bottom-cta button:hover,
+.btn.review-btn:hover{
+    background: #fff;
+    color: var(--primary-color);
+}
+
+.hero--bottom-cta h3{
+    font-size: clamp(3rem, 4vw, 4rem);
+    text-transform: uppercase;
+}
+
+.flex.hero--bottom-cta {
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.btn.review-btn{
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+    padding: 1.125rem 2.5rem 1.125rem 2.5rem;
+    border-radius: 50px;
+    transition: all .2s ease-in;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.notify-icons .n2{
+    position: relative;
+    left: -20px;
+}
+.notify-icons .n3{
+    position: relative;
+    left: -40px;
+}
+
+.notify-container{
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.hero-video-block img:nth-child(2){
+    border-radius: 50%;
+}
+
+.hero-video-block .video--block{
+    align-items: center;
+    gap:2rem
+}
+
+.company-img-bg, .company-img-container{
+    position: relative;
+    width: auto;
+}
+
+.company-main-img{
+    position:absolute;
+    inset: 0;
+    position: absolute;
+    inset: 0;
+    margin: 50px 0 0px 50px;
+}
+
+.company.grid {
+    grid-template-columns: auto 1fr;
+    grid-gap: 4rem;
+    align-items: end;
+    margin-top: 70px;
+}
+
+.company-navigation{
+    background: var(--primary-color);
+    width: 75%;
+    margin-left: 50px;
+}
+
+.company-navigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-navigation ul li:not(:last-child){
+    border-right: 1px dashed #3c6983;
+}
+
+.company-navigation ul a{
+    padding: 1.875rem 2.5rem;
+    display: block;
+}
+
+.company-navigation ul a img{
+    width: auto;
+}
+
+@media (max-width: 1440px){
+    .company-navigation {
+        width: 94.3%;
+    }
+    .company-navigation ul a img {
+        width: 4rem;
+    }
+}
+
+@media (max-width:1024px){
+    .company-navigation ul {
+        flex-wrap: wrap;
+    }
+    .company-navigation {
+        margin-left: 0;
+    }
+    .company-navigation ul li:not(:last-child) {
+        border-right: 1px dashed #3c698300;
+    }
+}
+
+@media (max-width:768px) {
+    .grid.hero-banner-block {
+        grid-template-columns: 100%;
+        gap: 80px;
+        text-align: center;
+    }
+    .hero-content-block h1 {
+        font-size: clamp(5rem, 6vw, 6rem);
+    }
+    .hero-video-block .video--block,
+    .flex.hero--bottom-cta,
+    .notify-container {
+        justify-content: center;
+    }
+    .company.grid {
+        grid-template-columns: 100%;
+        grid-gap: 0;
+    }
+    .company-img-bg{
+        display: none;
+    }
+    .company-main-img {
+        position: static;
+        margin: 0;
+    }
+    .company-navigation {
+        width: 100%;
+    }
+    .company-navigation ul {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:440px) {
+    .hero-content-block h1 {
+            font-size: clamp(3rem, 6vw, 6rem);
+    }
+    .hero-content-block h1 span {
+        width: 5rem;
+        line-height: 5rem;
+        left: -3%;
+    }
+    .hero-content-block h2 {
+        font-size: clamp(2rem, 4vw, 4rem);
+    }
+    .hero--bottom-cta button {
+        padding: 1.4375rem 2.125rem 1.375rem 2.125rem;
+        font-size: 1rem;
+    }
+    .hero--bottom-cta h3 {
+        font-size: clamp(2rem, 4vw, 4rem);
+    }
+    .btn.review-btn {
+        padding: 1.125rem 1.5rem 1.125rem 1.5rem;
+    }
+    .notify-icons .n2 {
+        left: -30px;
+    }
+    .notify-icons .n3 {
+        left: -60px;
+    }
+}

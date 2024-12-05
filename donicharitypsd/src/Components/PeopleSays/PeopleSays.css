@@ -1,0 +1,130 @@
+.people-says.bg{
+    background-image: url(../Assets/people-says.jpg);
+    position: relative;
+    height: calc(100vh - 20vh);
+    background-position: center center;
+    display: flex;
+    align-items: center;
+}
+
+.peoplesays .page--heading h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.people-says.bg .overlay{
+    background: var(--primary-color);
+    mix-blend-mode: normal;
+    opacity: .9;
+}
+
+.peoplesays .pagetitle.page--heading {
+    margin-bottom: 5rem;
+}
+
+.peolpe--says--content {
+    position: relative;
+    z-index: 9;
+}
+
+.people--says--box {
+    padding: 2.5rem;
+    border: 0.0625rem solid #666666;
+}
+
+.people--says--inner {
+    grid-template-columns: 18% auto;
+    grid-gap: 1rem;
+}
+
+.people--content h5, 
+.people--content p{
+    color: #fff;
+}
+
+.people--content h5{
+    font-size: 1.875rem;
+}
+
+.people--says--box .swiper-button-prev:after, 
+.people--says--box .swiper-button-next:after {
+    font-size: 1.25rem;
+    color: #fff;
+    padding: 1rem;
+}
+
+.people--says--box .swiper-button-prev:after{
+    background: var(--primary-color);
+}
+
+.people--says--box .swiper-button-next:after {
+    background: var(--secondary-color);
+}
+
+.people--icon img{
+    width: 1rem;
+}
+
+.people--icon.custom-next img{
+    transform: rotate(180deg);
+}
+
+.people--icon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.people--icon.custom-prev{
+    background: var(--primary-color);
+}
+
+.people--icon.custom-next{
+    background: var(--secondary-color);
+}
+
+.slider--navigation {
+    position: absolute;
+    right: -4rem;
+    top: 13rem;
+}
+
+@media (max-width:1024px) {
+    .slider--navigation {
+        right: 0;
+        top: auto;
+        bottom: 0;
+        display: flex;
+    }
+    .people--icon img {
+        transform: rotate(180deg);
+    }
+    .people--icon.custom-next{
+        transform: rotate(180deg);
+    }
+}
+
+@media (max-width:768px){
+    .people-says.bg {
+        height: calc(100vh - 40vh);
+    }
+}
+
+@media (max-width:440px) {
+    .people-says.bg {
+        height: calc(100vh - 25vh);
+    }
+    .people-img img {
+        width: 25%;
+        border-radius: 50%;
+    }
+    .people--says--inner {
+        grid-template-columns: 100%;
+    }
+    .people--says--box {
+        padding: 1rem 1rem 5rem;
+    }
+}

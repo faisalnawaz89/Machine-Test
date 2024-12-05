@@ -1,0 +1,123 @@
+.home--slider--bg{
+    background-image: url(../Assets/slider-bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-position: 100% 130%;
+    background-repeat: no-repeat;
+}
+
+.grid.slider--content--block {
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh + 153px);
+    grid-template-columns: 1fr 1fr;
+}
+
+.slider--title h1{
+    position: relative;
+    font-size: clamp(2rem, 2.875vw, 2.875rem);
+    color: #fff;
+    font-weight: 700;
+    font-family: var(--primary-font);
+    line-height: 1.2;
+}
+
+.slider--title h1::before{
+    content: '';
+    position: absolute;
+    width: 0.4375rem;
+    background: #1bda78;
+    height: 100%;
+    left: -1.25rem;
+    bottom: 0;
+}
+
+.slider--title p{
+    color: #fff;
+    font-family: var(--primary-font);
+    line-height: 1.5;
+    margin-bottom: 3.75rem;
+}
+
+.slider--form--inner {
+    background: #20d578a8;
+    padding: 1.5625rem 3.75rem;
+}
+
+.slider--form--inner p{
+    margin: 0;
+    color: #fff;
+}
+
+.slider--form--inner h3{
+    color: #fff;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.slider--form--inner input{
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 1.875rem;
+    outline: 0;
+    border: 0;
+    padding: 0 0.625rem;
+}
+
+@media (max-width:1140px){
+    .home--slider--bg {
+        background-position: center top;
+    }
+}
+
+@media (max-width:1024px) {
+    :root{
+        font-size: 14px;
+    }
+    .grid.slider--content--block {
+        height: calc(100vh + 40px);
+    }
+    .slider--title h1::before {
+        left: -10px;
+    }
+}
+
+@media (max-width:768px) {
+    .home--slider--bg {
+        height: 82vh;
+        background-size: cover;
+    }
+    .grid.slider--content--block {
+        height: calc(100vh + 10px);
+    }
+}
+
+@media (max-width:440px) {
+    .grid.slider--content--block {
+        height: 100vh;
+        grid-template-columns: 100%;
+    }
+    .home--slider--bg {
+        height: 100vh;
+    }
+    .slider--title {
+        margin-top: 0px;
+        padding: 0 2rem;
+        text-align: center;
+    }
+    .slider--title h1::before {
+        height: auto;
+    }
+    .grid.slider--content--block {
+        grid-gap: 0rem;
+    }
+    .slider--form--inner {
+        padding: 0.5625rem 0.75rem;
+    }
+    .slider--form--inner input {
+        margin-bottom: 0.875rem;
+    }
+
+}
+

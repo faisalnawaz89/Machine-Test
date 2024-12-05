@@ -1,0 +1,38 @@
+.transport.transport-block {
+    padding: 8rem 0;
+}
+
+.about.about-block {
+    padding-top: 5rem;
+}
+.divider{
+    width: 3rem;
+    height: 0.625rem;
+    background: var(--primary-color);
+    border-radius: 3.125rem;
+    margin: 0.125rem auto 0;
+}
+
+.main--tilte h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-block p{
+    text-align: center;
+    padding: 0 4vw;
+    line-height: 1.5;
+    margin-top: 2.8125rem;
+}
+
+@media (max-width:1024px) {
+    .about.about-block {
+        padding-top: 0rem;
+    }
+}
+
+@media (max-width:768px) {
+    .about.about-block {
+        padding-top: 5rem;
+    }
+}

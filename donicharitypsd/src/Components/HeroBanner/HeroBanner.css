@@ -1,0 +1,94 @@
+.main--slider{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: #3a3a3a;
+    mix-blend-mode: multiply;
+}
+
+.slider--image {
+    height: calc(100vh - 104px);
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    
+}
+
+.slider--title {
+    position: relative;
+    text-align: center;
+    z-index: 9;
+    margin-top: 12vh;
+}
+
+.slider--title h1 {
+    color: #fff;
+    font-size: clamp(4rem, 5.313vw, 5.313rem);
+    text-transform: uppercase;
+    width: 40rem;
+    margin: auto;
+    line-height: 1;
+}
+
+.slider--title p{
+    color: #fff;
+    margin-top: 25px;
+    width: 55rem;
+}
+
+.main--slider .swiper-horizontal > .swiper-pagination-bullets, 
+.main--slider .swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: calc(50% - -8vh);
+}
+
+.main--slider .swiper-pagination-bullet{
+    border: 1px solid #fff;
+}
+
+.main--slider .swiper-pagination-bullet-active {
+    background: transparent;
+}
+
+.main--slider .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 12px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 12px));
+}
+
+@media (max-width:768px) {
+    .slider--image {
+        height: calc(80vh - 104px);
+    }
+    .slider--image {
+        height: calc(80vh - 104px);
+    }
+    .slider--title {
+        margin-top: 7vh;
+    }
+    .main--slider .swiper-horizontal > .swiper-pagination-bullets, 
+    .main--slider .swiper-pagination-bullets.swiper-pagination-horizontal {
+        top: calc(50% - -4vh);
+    }
+
+}
+
+@media (max-width:440px) {
+    .slider--title h1 {
+        font-size: clamp(2rem, 5.313vw, 5.313rem);
+    }
+    .slider--title p {
+        width: 100%;
+        padding: 0 15%;
+    }
+    .main--slider .swiper-horizontal > .swiper-pagination-bullets, 
+    .main--slider .swiper-pagination-bullets.swiper-pagination-horizontal {
+        top: auto;
+        bottom: 20px;
+    }
+    .slider--image {
+        align-items: center;
+        height: 45vh;
+    }
+}

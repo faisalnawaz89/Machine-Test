@@ -1,0 +1,52 @@
+.grid.banner--grid {
+    grid-template-columns: auto auto;
+    column-gap: 10%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem 0;
+}
+
+.banner--title--block h1{
+    color: var(--secondary-color);
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 1.4;
+    max-width: 31.875rem;
+}
+
+.banner--title--block p{
+    padding: 3rem 0;
+}
+
+.btn--secondary{
+    background: var(--secondary-color)!important;
+    color:#fff!important;
+}
+
+.banner.banner-block {
+    background: #fafafa;
+}
+
+@media (max-width:1024px) {
+    .grid.banner--grid {
+        grid-template-columns: auto 49%;
+    }
+}
+
+@media (max-width:768px) {
+    .banner--title--block .flex{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:440px) {
+    .grid.banner--grid {
+        grid-template-columns: 100%;
+        grid-gap: 2rem;
+    }
+    .banner--title--block {
+        order: 2;
+    }
+    .grid.banner--grid {
+        padding: 1rem 0;
+    }
+}

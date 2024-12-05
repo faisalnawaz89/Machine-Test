@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root{
+  font-size: 16px;
+  --font1: "Open Sans", sans-serif;
+  --font2: "Caveat", sans-serif;
+  --container: 1230px;
+  --container-padding: 0 0;
+  --m-auto: 0 auto;
+  --font-title-color: #27294a;
+  --font-para-color:#626367;
+  --primary-color:#1c2159;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font1);
+  line-height: 1.2;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+.grid{display: grid;}
+.flex{display: flex;}
+img{width: 100%;display: block;height: auto;}
+ul{padding: 0;margin: 0;list-style: none;}
+a{transition: all .2s ease-in;}
+
+.container{
+  width: var(--container);
+  margin: var(--m-auto);
+  padding: var(--container-padding)
+}

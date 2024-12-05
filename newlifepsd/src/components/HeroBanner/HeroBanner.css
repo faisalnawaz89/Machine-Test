@@ -1,0 +1,93 @@
+.hero--banner-bg{
+    position: relative;
+    background-image: url(../Assets/slider-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.hero--banner--curve--layer::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-repeat:no-repeat ;
+    background-image: url(../Assets/baneer-layer.png);
+    height: 100vh;
+    z-index: 1;
+}
+
+.hero--slider--title{
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    padding: 0 15%;
+    position: relative;
+    z-index: 9;
+    margin-top: 8.125rem;
+}
+
+.hero--banner--curve--title h1{
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.hero--banner--curve--title p{
+    color: var(--text-white);
+    line-height: 2;
+    padding: 1.875rem 5.625rem 1.875rem 0px;
+}
+
+.cta-slider-btn a {
+    min-width: 12rem;
+    text-align: center;
+}
+
+.cta-slider-btn {
+    gap: 1rem;
+}
+
+@media (max-width:1440px) {
+    .hero--slider--title {
+        padding: 0 10%;
+    }
+    .hero--banner--curve--layer::before {
+        background-size: contain;
+        background-position: -35% 100%;
+    }
+}
+
+@media (max-width:1366px) {
+    .hero--banner--curve--layer::before {
+        background-position: -27% 100%;
+    }
+    .hero--banner-bg {
+        background-position: bottom center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero--banner--curve--layer::before {
+        background-position: -210% 100%;
+        mix-blend-mode: multiply;
+    }
+}
+
+@media (max-width:768px) {
+    .hero--slider--title {
+        grid-template-columns: 100%;
+    }
+    .hero--banner--curve--layer::before {
+        mix-blend-mode: multiply;
+    }
+}
+
+@media (max-width:440px) {
+    .hero--banner--curve--layer::before {
+        background-position: bottom;
+        background-size: cover;
+    }
+    .hero--slider--title {
+        padding: 0 8%;
+    }
+}

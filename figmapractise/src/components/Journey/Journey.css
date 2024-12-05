@@ -1,0 +1,134 @@
+.journey-block{
+    display: flex;
+}
+
+.blank--div{
+
+}
+
+.journey--bar{
+    background: var(--primary-color);
+    margin-top: 6.25rem;
+    border-top-left-radius: 4.375rem;
+    border-bottom-left-radius: 4.375rem;
+    padding: 0.3125rem 0;
+    flex-grow: 1;
+}
+
+.journey-title-bar{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.journey-title-bar h3 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    color: #fff;
+    padding: 0px 11vw;
+}
+
+.journey--icon{
+    background: var(--bg-color-secondary);
+    border-radius: 50%;
+    padding: 1.25rem 1.375rem;
+    margin-left: 0.3125rem;
+}
+
+
+.journey-growth img {
+    margin: auto;
+    display: block;
+    padding: 5% 0;
+}
+
+.journey--growth--img{
+    position: relative;
+}
+
+.journey-layer-up{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    width: 56vw;;
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: 1.5625rem;
+    gap: 20%;
+    line-height: 1.2;
+}
+
+.journey-layer-up .layer,
+.journey-layer-down .layer {
+    font-family: var(--font2);
+    font-size: 1rem;
+    color: var(--paragraph-color);
+}
+
+.journey-layer-down{
+    position: absolute;
+    top: 70%;
+    display: flex;
+    width: 33vw;
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: 25px;
+    gap: 36%;
+    line-height: 1.2;
+}
+
+.journey--growth--img img{
+    width: auto;
+}
+
+@media (max-width: 1440px) {
+    .journey-layer-up {
+        width: 80vw;
+    }
+    .journey-layer-down {
+        width: 48vw;
+    }
+    .journey--growth--img {
+        margin-bottom: 2.8125rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .journey--growth--img img {
+        width: 50rem;
+    }
+    .journey-layer-up {
+        width: 69vw;
+    }
+    .journey-layer-down {
+        width: 40vw;
+    }
+    .journey--growth--img {
+        margin-bottom: 4.8125rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .journey-layer-up {
+        width: 91vw;
+    }
+    .journey-layer-down {
+        width: 57vw;
+    }
+    .journey-title-bar h3 {
+        padding: 0px 6vw;
+    }
+}
+
+@media (max-width:440px) {
+    .journey--growth--img img {
+        width: 25rem;
+    }
+    .journey-layer-up, .journey-layer-down{
+        display: none;
+    }
+    .journey--growth--img {
+        margin-bottom: 2.8125rem;
+        margin-top: 2.8125rem;
+    }
+}

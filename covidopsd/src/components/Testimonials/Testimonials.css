@@ -1,0 +1,74 @@
+.testimonials.testimonilas-block {
+    margin-top: auto;
+}
+
+.grid.testimonials {
+    grid-template-columns: auto auto;
+    width: calc(100% - 40rem);
+    margin: auto;
+    gap: 3rem;
+}
+
+.testimonial--inner {
+    background: #fefefd;
+    box-shadow: -1px 1px 20px 10px #0000000a;
+    border-radius: 5px;
+    padding: 0rem 2.5rem 3.75rem;
+    text-align: center;
+}
+
+.testimonial--inner img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 3.125rem;
+    margin: auto;
+    position: relative;
+    top: -2.5rem;
+}
+
+.testimonilas-block .corona--prevent--heading{
+    margin-bottom: 5rem;
+}
+
+.spyke--bg{
+    position: relative;
+}
+
+.spyke--bg::before,
+.spyke--bg::after{
+    content: '';
+    position: absolute;
+    top: 80px;
+    width: 85px;
+    height: 86px;
+    background-image: url(../Assets/covid-spyke-bg.png);
+    background-size: cover;
+    opacity: .1;
+    right: -89px;
+}
+
+.spyke--bg::after{
+    top: auto;
+    bottom: -120px;
+    left: -130%;
+}
+
+@media (max-width:1024px) {
+    .grid.testimonials {
+        width: calc(100% - 15rem);
+    }
+}
+
+@media (max-width:440px){
+    .grid.testimonials {
+        width: calc(100% - 4rem);
+        grid-template-columns: 100%;
+    }
+    .testimonilas-block .corona--prevent--heading {
+        margin-bottom: 4rem;
+        margin-top: 6rem;
+    }
+    .spyke--bg::before, .spyke--bg::after{
+        display: none;
+    }
+}

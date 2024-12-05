@@ -1,0 +1,89 @@
+.live--channel--blocks {
+    padding: 70px 11.4%;
+}
+
+.livechannel{
+    position: relative;
+}
+
+.livechannel::before, .livechannel::after{
+    content: '';
+    position: absolute;
+    background-size: contain;
+    width: 700px;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.livechannel::after{
+    background-image: url(../Assets/polka-dot-right.png);
+    right: -10%;
+    bottom: 0;
+}
+
+.livechannel .page--title p {
+    margin-right: 5%;
+}
+
+.livechannel::before{
+    background-image: url(../Assets/polka-dot-left.png);
+    left: -10%;
+}
+
+.grid.live--channel--block {
+    grid-template-columns: auto 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.livechannel .theme.cta--btn {
+    margin-bottom: 4rem;
+}
+
+@media (max-width:1440px) {
+    .live--channel--blocks {
+        padding: 4.375rem 2.8125rem;
+    }
+}
+
+@media (max-width:1366px) {
+    .livechannel .page--title p {
+        margin-right: 20%;
+    }
+}
+
+@media (max-width:1140px) {
+    .live--channel--img img{
+        width: 100%;
+    }
+    .livechannel::after {
+        right: -20%;
+    }
+}
+
+@media (max-width:768px) {
+    .livechannel::after {
+        right: -40%;
+    }
+    .grid.live--channel--block {
+        grid-template-columns: auto 60%;
+    }
+}
+
+@media (max-width:440px) {
+    .grid.live--channel--block {
+        grid-template-columns: 100%;
+    }
+    .livechannel .theme.cta--btn {
+        margin-bottom: 2rem;
+    }
+    .livechannel .page--title p {
+        margin-right: 0%;
+    }
+    .livechannel .page--title p {
+        margin-bottom: 30px;
+    }
+    .livechannel::before, .livechannel::after {
+        opacity: .3;
+    }
+}

@@ -1,0 +1,81 @@
+.mission.mission-block {
+    padding: 7rem 0;
+}
+
+.mission-block .page--heading {
+    margin-bottom: 3rem;
+}
+
+.mission-block .page--heading h2,
+.mission-block .page--heading p{
+    color: #1b1b1b;
+}
+
+.flex.mission--box {
+    gap: 2rem;
+}
+
+.mission--single--rows:nth-child(odd){
+    margin-left: 14%;
+}
+
+.mission--single--rows {
+    padding-bottom: 2rem;
+}
+
+.mission--box--inner{
+    position: relative;
+}
+
+.mission--inner--content{
+    position: absolute;
+    background: var(--secondary-color);
+    inset: 0;
+    opacity: .9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mission--inner--content h4{
+    color: #fff;
+    font-size: 1.563rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.mission--inner--content p{
+    font-size: 1.063rem;
+    color: #fff;
+    padding: 0.625rem 15%;
+}
+
+.flex.mission--bg--btn {
+    gap: 1rem;
+}
+
+.mission--bg--btn .cta--btn a{
+    padding: .7rem 2.1875rem .7rem 2.1875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media (max-width:768px) {
+    .mission--single--rows:nth-child(odd) {
+        margin-left: 0;
+    }
+    .mission--inner--content p {
+        padding: 0.625rem 4%;
+    }
+    .mission--bg--btn .cta--btn a {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:440px) {
+    .flex.mission--box {
+        flex-direction: column;
+    }
+}

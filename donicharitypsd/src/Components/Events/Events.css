@@ -1,0 +1,26 @@
+.upcoming--event.featured-block {
+    padding: 7rem 0;
+}
+.upcoming--event .featured--image--grid img{
+    border: 0;
+}
+
+.upcoming--event .featured--content p {
+    padding-right: 0;
+    margin-bottom: 1rem;
+}
+
+.upcoming--event .featured--content h4 {
+    font-size: 1.625rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.upcoming--event .cta--btn a, 
+.upcoming--event .cta--btn button {
+    margin-top: 1rem;
+}
+
+.upcoming--event .grid.featured--image--grid {
+    margin-bottom: 2rem;
+}

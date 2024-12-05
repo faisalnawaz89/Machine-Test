@@ -1,0 +1,51 @@
+.achivement-block{
+    background: var(--bg-color-secondary);
+    padding: 2.5rem 0;
+}
+
+.achivement-block-bar{
+    grid-template-columns: repeat(5, 1fr);
+}
+.achivement--cell{
+    text-align: center;
+    padding: 0px 2.5rem;
+}
+
+.achivement--cell:not(:last-child){
+    border-right:1px dashed #fff;
+}
+.achivement--cell h4{
+    font-family: var(--font1);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    color: #fff;
+    font-weight: 700;
+}
+
+.achivement--cell p{
+    font-size: 0.938rem;
+    color: #fff;
+    font-family: var(--font1);
+    font-weight: 500;
+}
+
+@media (max-width:768px){
+    .achivement--cell {
+        padding: 0px 0rem;
+    }
+}
+
+@media (max-width:440px) {
+    .achivement-block-bar {
+        grid-template-columns: 100%;
+    }
+    .achivement--cell:not(:last-child) {
+        border-right: 0;
+        border-bottom: 1px dashed #fff;
+        margin-bottom: 15px;
+    }
+    .achivement-block-bar {
+        grid-template-columns: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,78 @@
+.grid.why--choose--us--boxes {
+    grid-template-columns: auto auto auto;
+    padding: 4% 25%;
+}
+
+.why--choose--us--block{
+    padding-top: 6.25rem;
+}
+
+.why--choose--us--box--inner{
+    background: #464646;
+    text-align: center;
+    border-radius: 0.625rem;
+    width: 10.625rem;
+    padding: 2.5rem 0;
+    margin: auto;
+}
+
+.why--choose--us--box img{
+    width: auto;
+    margin: auto;
+}
+
+.why--choose--us--box h4{
+    font-size: 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font2);
+    font-weight: 800;
+    padding: 0.625rem 0 0.3125rem 0;
+}
+
+.why--choose--us--box p{
+    text-align: center;
+    padding: 0px 4rem;
+}
+
+.primary--color .why--choose--us--box--inner{
+    background: var(--primary-color);
+}
+
+.why--choose--us--block .cta--btn a{
+    width: 12rem;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+@media (max-width:1440px) {
+    .grid.why--choose--us--boxes {
+        padding: 4% 15%;
+    }
+}
+
+@media (max-width:1140px) {
+    .grid.why--choose--us--boxes {
+        padding: 4% 6%;
+    }
+}
+
+@media (max-width:1024px) {
+    .why--choose--us--box p {
+        padding: 0px 2rem;
+    }
+}
+
+@media(max-width:768px){
+    .why--choose--us--box p {
+        padding: 0px 1rem;
+    }
+}
+
+@media (max-width:440px) {
+    .grid.why--choose--us--boxes {
+        grid-template-columns: 100%;
+        grid-gap: 3rem;
+    }
+}
