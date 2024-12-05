@@ -152,7 +152,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="pre--footer">
-                <p>© 2020 All Rights Reserved. Design by Free Html Templates</p>
+                <p>© 2024 Created by Faisal Nawaz</p>
             </div>
         </div>
     </div>
