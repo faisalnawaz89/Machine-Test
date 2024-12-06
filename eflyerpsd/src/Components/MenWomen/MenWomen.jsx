@@ -22,7 +22,7 @@ const MenWomen = () => {
                     modules={[Navigation, Autoplay]} 
                     autoplay={{delay:3000, disableOnInteraction:false}}
                     navigation={{prevEl:'.product-right-arrow', nextEl:'.product-left-arrow'}}
-                    breakpoints={{640:{slidesPerView:1},768:{slidesPerView:2},1024:{slidesPerView:3}}}>
+                    breakpoints={{440:{slidesPerView:1},640:{slidesPerView:1},768:{slidesPerView:2},1024:{slidesPerView:3}}}>
                     {productData.map((item, index)=>{
                     return  <SwiperSlide>
                                 <ProductSlider key={index} ProductTitle={item.title} ProductPrice={item.price} ProductImage={item.image}/>
