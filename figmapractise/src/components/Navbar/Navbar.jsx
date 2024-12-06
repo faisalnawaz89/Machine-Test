@@ -11,7 +11,7 @@ const Navbar = () => {
     <header className='header header-block'>
         <div className='container'>
             <nav className='nav nav-block flex'>
-                <img className="logo" src={company_logo} alt=""/>
+                <h1>CODELOGIC</h1>
                 <Menu display="smnone" />
                 <button className='btn get--cta smnone'>Contact Us</button>
                 <span className='mdnone humburger--menu' onClick={()=>setMenu(!menu)}>

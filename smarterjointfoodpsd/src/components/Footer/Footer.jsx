@@ -24,12 +24,12 @@ const Footer = () => {
                 </div>
                 <div className="footerlinks footer-address">
                     <h5>Contact Us:</h5>
-                    <h6>Smarter Nutrition, Inc. <br /> 17870 Newhope St Ste 104 #480 <br /> Fountain Valley, CA 92708</h6>
+                    <h6>Smarter Nutrition, Inc. <br /> 17870 Lorem ipsum Ste lorem <br /> Lorem Ipsum, IN 123456</h6>
                 </div>
                 <div className="footerlinks footer-address">
                     <h5>Any Questions?</h5>
                     <h6 className='contact--title'>Contact Us:</h6>
-                    <h6 style={{color:'#fff'}}>1-877-892-1380 </h6>
+                    <h6 style={{color:'#fff'}}>1-123-456-789 </h6>
                 </div>
             </div>
         </div>

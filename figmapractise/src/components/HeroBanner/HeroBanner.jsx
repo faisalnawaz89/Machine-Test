@@ -20,7 +20,7 @@ const HeroBanner = () => {
         <div className="container">
             <div className="grid hero-banner-block">
                 <div className="hero-content-block">
-                    <h1>CodeLogi <span>cx </span></h1>
+                    <h1>CodeLogic</h1>
                     <h2>Product Engineering</h2>
                     <div className="flex hero--bottom-cta">
                         <button>Get Started</button>

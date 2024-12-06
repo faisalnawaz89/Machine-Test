@@ -17,9 +17,9 @@ const Footer = () => {
                             <img src={footer_flag} alt="" />
                         </div>
                         <div className="footer--address">
-                            <p>6th floor, WEBEL IT PARK Tower II, <br />
-                            BN-9, BN Block, Sector V, Bidhannagar, <br />
-                            Kolkata, West Bengal 700091</p>
+                            <p>LOREM IPSUM TEXT LOREM, <br />
+                            LOREM IPSUM TEXT, Sector V, LOREM, <br />
+                            Kolkata, West Bengal 123467</p>
                         </div>
                     </div>
                     <div className="flex-col-2">
@@ -29,7 +29,7 @@ const Footer = () => {
                             </div>
                             <div className="footer--email">
                                 <h3>EMAIL</h3>
-                                <a href="mailto:hr@codelogicx.in">hr@codelogicx.in</a>
+                                <a href="mailto:admin@example.in">admin@example.in</a>
                             </div>
                         </div>
                         <div className="flex footer-col-space-center">
@@ -38,8 +38,8 @@ const Footer = () => {
                             </div>
                             <div className="footer--email">
                                 <h3>PHONE</h3>
-                                <a href="tel:+913340054624">+91-33-40054624</a><br />
-                                <a href="tel:+916290828707">+91-629 0828707</a>
+                                <a href="tel:+1231234567">+91-33-12345678</a><br />
+                                <a href="tel:+1231234567">+91-123 1234567</a>
                             </div>
                         </div>
                     </div>
