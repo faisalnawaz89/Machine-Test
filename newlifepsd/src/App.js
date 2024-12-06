@@ -7,7 +7,7 @@ import Laboratory from './components/Laboratory/Laboratory'
 import PatientsSays from './components/PatientsSays/PatientsSays'
 import Appointment from './components/Appointment/Appointment'
 import Footer from './components/Footer/Footer'
-
+// All Components
 const App = () => {
   return (
     <>
