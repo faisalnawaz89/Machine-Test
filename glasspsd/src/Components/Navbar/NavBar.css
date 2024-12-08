@@ -1,0 +1,94 @@
+.header--block {
+    background: var(--primary-color);
+}
+
+.logo img{
+    width: auto;
+}
+
+.grid.header--navigation {
+    grid-template-columns: auto 1fr auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 6rem;
+    margin: 0 3vh;
+    padding: 1.5rem 0;
+}
+
+.nav--bar ul{
+    display: flex;
+    gap: 5rem;
+}
+
+.nav--bar ul li a,
+.account--bar a{
+    color: #bdbcbc;
+    text-transform: uppercase;
+}
+
+.user--account,
+.account--bar {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.user--account span{
+    display: flex;
+}
+
+@media (max-width:1140px) {
+    .nav--bar ul {
+        gap: 3rem;
+    }
+    .user--account, 
+    .account--bar{
+        gap: 2rem;
+    }
+}
+
+@media (max-width:1024px){
+    .grid.header--navigation {
+        grid-gap: 4rem;
+    }
+}
+
+@media (max-width:768px) {
+    .main--menu {
+        display: none;
+    }
+    .mobile--tab{
+        display: flex;
+        cursor: pointer;
+    }
+    .grid.header--navigation {
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+    .mobile--menu--block .main--menu{
+        display: block;
+    }
+    .mobile--menu--block .main--menu nav ul{
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile--menu--block{
+        display: block;
+        padding: 1.875rem 0;
+        background: #000;
+    }
+}
+
+@media (max-width:440px) {
+    .user--account, .account--bar {
+        gap: 1rem;
+    }
+    .logo img {
+        width: 6rem;
+    }
+}
+
+

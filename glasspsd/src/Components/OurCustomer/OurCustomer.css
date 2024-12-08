@@ -1,0 +1,25 @@
+.our--customer{
+    text-align: center;
+    padding: 3vw 0 6vw;
+}
+
+.our--customer p{
+    padding: 2.5rem 13% 3.75rem;
+}
+
+.our--customer img{
+    width: auto;
+    margin: auto;
+}
+
+.our--customer h4{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+@media (max-width:440px) {
+    .our--customer {
+        padding: 10vw 0 6vw;
+    }
+}

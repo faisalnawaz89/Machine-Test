@@ -1,0 +1,109 @@
+.ourcustomer.our--customer {
+    padding: 7rem 0;
+}
+
+.customer--block{
+    position: relative;
+    width: 835px;
+    margin: auto;
+}
+
+.customer--block::before{
+    content: '';
+    position: absolute;
+    width: 3.75rem;
+    height: 100%;
+    background: #853de5;
+    z-index: -1;
+    padding: 2.5rem 4.375rem;
+    left: -3.75rem;
+    top: -2.5rem;
+}
+
+.customer--inner {
+    box-shadow: 0 0 0.5rem 0.25rem #0000000d;
+    padding: 1.5625rem 2.1875rem 0;
+    background: #fff;
+    margin: 10vh 0;
+    max-height: 373px;
+}
+
+.customer--inner img{
+    width: auto;
+    border-radius: 50%;
+}
+
+.customer--inner h5 {
+    font-size: 1.25rem;
+    padding: 0.625rem 0;
+}
+
+.customer--inner p{
+    line-height: 1.8;
+}
+
+.customer--inner span{
+    background-image: url(../Assets/double--qoute.png);
+    width: 1.25rem;
+    height: 1.25rem;
+    background-size: cover;
+    display: block;
+    margin-top: 1.25rem;
+}
+
+.customer--arrow--navigation{
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    margin-top: 45px;
+}
+
+.customer--arrow--navigation img {
+    width: .875rem;
+}
+
+.customer-nav-left,
+.customer-nav-right{
+    width: 50px;
+    height: 50px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.customer-nav-left{
+    background: #853de5;
+}
+
+.customer-nav-left img{
+    filter: invert(1);
+}
+
+@media (max-width:768px) {
+    .customer--block {
+        width: 594px;
+    }
+    .customer--arrow--navigation {
+        margin-top: -11px;
+    }
+}
+
+@media (max-width:440px) {
+    .customer--block::before {
+        background: transparent;
+    }
+    .customer--inner {
+        max-height: unset;
+        margin: 5vh 0;
+    }
+    .customer--arrow--navigation {
+        padding-bottom: 1.875rem;
+    }
+    .ourcustomer.our--customer {
+        padding: 3rem 0;
+    }
+}

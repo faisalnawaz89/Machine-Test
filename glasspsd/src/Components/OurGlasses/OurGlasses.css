@@ -1,0 +1,56 @@
+.ourglasses.our--glasses {
+    background: var(--secondary-color);
+    margin: 5rem 0;
+}
+
+.our--glasses--block {
+    padding: 5rem 0 6rem;
+    text-align: center;
+}
+
+.box--inner {
+    background: #fff;
+    border-radius: 0.625rem;
+    padding: 3.4375rem 0;
+}
+
+.product--boxes {
+    grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
+    grid-gap: 1.5rem;
+    text-align: center;
+    margin: 2rem 0 5rem;
+}
+
+.box--inner img{
+    width: auto;
+    margin: auto;
+}
+
+.box--inner h4{
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: 4rem;
+}
+
+.box--inner a{
+    color: #00000063;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.our--glasses--block .pagetitle.page--title h2{
+    color: #7e7e7e;
+    text-align: left;
+
+}
+
+.our--glasses--block .pagetitle.page--title h2 span:nth-child(1),
+.our--glasses--block .pagetitle.page--title h2 span:nth-child(2)  {
+    color: #000000;
+}
+
+@media (max-width:1024px) {
+    .ourglasses.our--glasses {
+        margin: 3rem 0;
+    }
+}

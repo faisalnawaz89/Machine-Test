@@ -1,0 +1,39 @@
+.header--block{
+    grid-template-columns: auto auto;
+}
+
+.flex.space--between.accout--bar-block {
+    gap: 2rem;
+}
+
+.accout--bar-block svg,
+.accout--bar-block a{
+    display: flex;
+    fill: #fff !important;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header.main--header {
+    padding: 1rem 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width:440px) {
+    .mobile--menu{
+        display: block;
+        background: #fff;
+        padding: 1rem 0px;
+        text-align: center;
+        border-radius: 0.25rem;
+        margin-top: 0.625rem;
+        position: relative;
+        z-index: 99;
+    }
+    .mobile--menu ul li:not(:last-child){
+        margin-bottom: 0.3125rem;
+        display: block;
+    }
+}

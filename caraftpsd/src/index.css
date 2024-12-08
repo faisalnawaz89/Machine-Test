@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 16px;
+  --container: 1200px;
+  --conatiner--space:0 15px;
+  --margin--auto: 0 auto;
+  --primary--color:#ffd35a;
+  --secondary--color:#424242;
+  --primary--font:"Poppins", serif;
+  --secondary--font:"Roboto", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  line-height: 1.5;
+  font-family: var(--primary--font);
+  color: #373637;
+}
+
+h2, h3, h4, h5, h6{
+  font-family: var(--secondary--font);
+}
+
+p{
+  font-size: 1rem;
+}
+
+img{
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  transition: all .2s ease-in; 
+  text-decoration: none;
+}
+
+.container{
+  width: var(--container);
+  margin: var(--margin--auto);
+  padding: var(--conatiner--space);
+}
+
+.cta--btn a,
+.cta--btn button {
+  padding: 0 0 0 0;
+}
+
+.grid{
+  display: grid;
+}
+
+.flex{
+  display: flex;
+}
+
+.space--between{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.space--center{
+  justify-content: center;
+  align-items: center;
+}
+
+.space--start{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.space--end{
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.pagetitle.page--title h2{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: clamp(1.8rem, 2.5vh, 2.5rem);
+}
+
+.pagetitle.page--title p{
+  text-align: center;
+}
+
+.mobile--menu{
+  display: none;
+}
+
+@media (min-width:1600px) {
+  :root{
+    --wrapper: 1600px;
+  }
+  .wrapper{
+    max-width: var(--wrapper);
+    margin: var(--margin--auto);
+  }
+}
+
+@media (max-width:1140px) {
+  :root{
+    --container:1024px
+  }
+}
+
+@media (max-width:1024px) {
+  :root{
+    --container:960px
+  }
+}
+
+@media (max-width:992px) {
+  :root{
+    --container:860px
+  }
+}
+
+@media (max-width:768px) {
+  :root{
+    --container:100%
+  }
+}
+
+@media (max-width:440px) {
+  .pagetitle.page--title {
+      padding: 0 1.25rem;
+  }
+}
+
+
+

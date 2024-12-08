@@ -1,0 +1,20 @@
+.specialoffer.special--offer {
+    text-align: center;
+    padding: 4vw 0;
+}
+
+.special--offer img{
+    padding: 5vh 0 12vh;
+    width: 80%;
+    margin: auto;
+}
+
+.special--offer .cta--btn{
+    margin-top: 5rem;
+}
+
+@media (max-width:440px) {
+    .special--offer img {
+        padding: 5vh 0 5vh;
+    }
+}

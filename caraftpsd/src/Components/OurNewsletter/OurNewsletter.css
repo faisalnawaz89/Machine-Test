@@ -1,0 +1,81 @@
+.news--latter .bg{
+    position: relative;
+    background-image: url(../Assets/newslatter-bg.jpg);
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.news--latter .overlay{
+    background: #5b36e0;
+    position: absolute;
+    inset: 0;
+    opacity: .9;
+}
+
+.news--latter--inner--title{
+    position: relative;
+    z-index: 999;
+}
+
+.news--latter--inner--title h5{
+    text-transform: uppercase;
+}
+
+.news--latter--inner--title h3{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.news--latter--inner--title p{
+    padding: 0 10%;
+    font-weight: 200;
+}
+
+.newslatter--input {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.newslatter--input input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    height: 2.5rem;
+    color: #fff;
+    outline: 0;
+}
+
+.newslatter--input button{
+    position: absolute;
+    right: 0;
+    background: #fff;
+    border: 0;
+    outline: 0;
+    color: #5d447f;
+    text-transform: uppercase;
+    padding: 0.5rem 1.6875rem;
+    border-radius: 1.5625rem;
+    font-size: .7rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .newslatter--input {
+        width: 37.125rem;
+        margin: 2.5rem auto;
+    }
+}
+
+@media (max-width:440px) {
+    .newslatter--input {
+        width: 23.125rem;
+    }
+}
