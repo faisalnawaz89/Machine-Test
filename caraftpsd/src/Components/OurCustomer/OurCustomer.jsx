@@ -20,7 +20,7 @@ const OurCustomer = () => {
                     <div className="customer--inner">
                         <Swiper
                         slidesPerView={1}
-                        modules={[Navigation]}
+                        modules={[Navigation, Autoplay]}
                         autoplay={{delay:3000, disableOnInteraction:false}}
                         navigation={{prevEl: '.customer-nav-left', nextEl:'.customer-nav-right'}}
                         >

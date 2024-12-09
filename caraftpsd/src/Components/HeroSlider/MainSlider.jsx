@@ -30,7 +30,7 @@ const MainSlider = () => {
         <Swiper
           slidesPerView={1}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
           navigation={{
             prevEl: prevRef.current,
             nextEl: nextRef.current,
