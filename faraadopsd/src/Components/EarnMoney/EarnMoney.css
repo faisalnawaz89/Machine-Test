@@ -1,0 +1,159 @@
+.earn--money .bg{
+    background-image: url(../Assest/about-bg.jpg);
+    height: 165vh;
+    background-size: 236%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.earn--money--block {
+    position: relative;
+    z-index: 9;
+    padding: 6rem 0 1.25rem;
+}
+
+.earn--money--block .divider{
+    max-width: 11.0625rem;
+    height: 0.0625rem;
+    background: #fff;
+    margin: 0.5625rem auto 0;
+    display: block;
+}
+
+.earn--money .overlay{
+    background: rgb(1, 60, 71);
+    background: linear-gradient(90deg, rgb(9 213 232 / 72%) 0%, rgb(9 213 232 / 92%) 50%, rgb(9 213 232 / 70%) 100%);;
+    opacity: 1;
+}
+
+.earn--money--image img{
+    width: auto;
+    margin: auto;
+    padding-top: 4rem;
+
+}
+
+.flare--car--title img{
+    width: auto;
+}
+
+.flare--car--block {
+    position: relative;
+    z-index: 9;
+}
+
+.earn--money--block .cta--btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.earn--money--block .cta--btn a:nth-child(2){
+    background: #fff;
+    color: #000;
+}
+
+.earn--money--block p{
+    color: #fff;
+    text-align: center;
+    padding: 27px 32%;
+    font-weight: 300;
+}
+
+.grid.space--between.flare--car--inner {
+    grid-template-columns: auto auto;
+    position: relative;
+    z-index: 9;
+}
+
+.flare--car--title img {
+    width: 10.625rem;
+}
+
+.flare--car--title .page--title h2{
+    text-align: left;
+}
+
+.flare--car--title .flex{
+    gap: .5rem;
+}
+
+.flare--car--title .page--title p{
+    color: #fff;
+    padding: 0.9375rem 0 2.5rem;
+    font-weight: 300;
+}
+
+@media (max-width:1366px) {
+    .earn--money .bg {
+        height: 173vh;
+    }
+}
+
+@media (max-width:1140px) {
+    .earn--money--image img {
+        width: 68%;
+    }
+    .earn--money--block p {
+        padding: 1.6875rem 20%;
+    }
+}
+
+@media (max-width:1024px) {
+    .earn--money--image img {
+        width: 60%;
+    }
+    .earn--money .bg {
+        height: 143vh;
+    }
+    .earn--money--block p {
+        padding: 1.6875rem 15%;
+    }
+}
+
+@media (max-width:768px) {
+    .earn--money .bg {
+        height: 125vh;
+        background-position: top center;
+        background-size: cover;
+    }
+    .grid.space--between.flare--car--inner{
+        grid-template-columns: 100%;
+    }
+    .flare--car--title {
+        order: 1;
+        padding: 0 5%;
+    }
+    .flare--car img{
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media (max-width:440px){
+    .earn--money--image img {
+        width: 85%;
+        padding-top: 1rem;
+    }
+    .earn--money--block p {
+        padding: 1.6875rem 4%;
+    }
+    .earn--money--block .cta--btn {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .earn--money .cta--btn a {
+        width: 65%;
+        text-align: center;
+    }
+    .flare--car img {
+        width: 75%;
+    }
+    .earn--money .bg {
+        height: 150vh;
+    }
+    .pagetitle.page--title h2 {
+        padding: 1rem 0 0;
+    }
+}

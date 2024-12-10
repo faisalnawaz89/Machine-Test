@@ -1,0 +1,110 @@
+.howtoplay .container{
+    max-width: 1230px;
+}
+
+.how--to--play .bg{
+    background-image: url(../Assest/about-bg.jpg);
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: top center;
+}
+
+.how--to--play .overlay{
+    background: #111212;
+    opacity: .8;
+}
+
+.how--to--play--main{
+    position: relative;
+    z-index: 9;
+}
+
+.how--to--play--main .divider{
+    max-width: 11.0625rem;
+    height: 0.0625rem;
+    background: #fff;
+    margin: 0.5625rem auto 0;
+    display: block;
+}
+
+.how--to--play--block {
+    grid-template-columns: auto auto;
+    border: 1px dotted #fff;
+    padding: 2.875rem 1.875rem;
+    grid-gap: 6rem;
+    margin-top: 5rem;
+}
+
+.form--block{
+    position: relative;
+    z-index: 9
+}
+
+.form--block input{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    height: 2.5rem;
+    margin-bottom: 1.6rem;
+    padding: 0 1.25rem;
+    background: #d4d6d7;
+}
+
+.form--block button{
+    background: #08bfdd;
+    color: #fff;
+    padding: 1rem 3.4375rem 1rem 3.4375rem;
+    border: 0;
+    outline: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form--block h4{
+    color: #fff;
+    margin-bottom: 1.25rem;
+}
+
+.how--to--play--title{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.how--to--play--title h4{
+    color: #d0d7d8;
+    font-family: var(--primary--font);
+}
+
+.how--to--play--title span{
+    color: #d0d7d8;
+    font-family: var(--secondary--font);
+    font-size: 1.563rem;
+}
+
+@media (max-width:1024px) {
+    .how--to--play--block {
+        grid-gap: 3rem;
+    }
+}
+
+@media (max-width:768px) {
+    .how--to--play .bg {
+        height: 65vh;
+    }
+    .how--to--play--block {
+        grid-gap: 3rem;
+        margin: 3.75rem 4% 0;
+    }
+}
+
+@media (max-width:440px) {
+    .how--to--play--block {
+        grid-template-columns: 100%;
+    }
+    .how--to--play .bg {
+        height: 110vh;
+    }
+}

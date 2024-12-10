@@ -1,0 +1,36 @@
+.main--header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    grid-template-columns: auto auto;
+    padding: .5vw 1vw;
+    z-index: 9999;
+}
+
+.menu--tab{
+    cursor: pointer;
+}
+
+.logo img {
+    width: auto;
+}
+
+@media (max-width:440px) {
+    .main--header {
+        padding: .5vw 3vw;
+    }
+    .main--menu--block .main--menu {
+        display: block;
+        background: #fff;
+        position: absolute;
+        top: 3.75rem;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        text-align: center;
+        padding: 1.5625rem 0;
+    }
+    .main--menu--block nav ul li a{
+        color:#081a2c
+    }
+}

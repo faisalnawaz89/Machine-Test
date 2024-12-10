@@ -1,0 +1,179 @@
+.hero--slider .bg{
+    background-image: url(../Assest/slider-bg.jpg);
+}
+
+.main--slider {
+    position: relative;
+    z-index: 9;
+}
+
+.slider--conatiner {
+    position: relative;
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.arrow{
+    position: relative;
+}
+
+.up-arrow,
+.down-arrow{
+    position: absolute;
+    width: 1px;
+    height: 400px;
+    background: #ffffff30;
+    z-index: 999;
+    left: 2vw;
+    top: 20vh;
+}
+
+.down-arrow{
+    left: auto;
+    right: 2vw;
+}
+
+.up-arrow::after,
+.down-arrow::after{
+    border-left: 0.5125rem solid #0000;
+    border-right: .5125rem solid #0000;
+    border-top: 0.75rem solid #ffffff96;
+    content: "";
+    cursor: pointer;
+    height: 0;
+    position: absolute;
+    right: -0.5rem;
+    width: 0;
+    bottom: 0;
+}
+
+.down-arrow::after{
+    border-bottom: 0.75rem solid #ffffff96;
+    border-top: 0;
+    top: 0;
+    bottom: auto;
+}
+
+.slider--image img{
+    width: auto;
+    margin: auto;
+}
+
+.slider--conatiner h1{
+    font-size: clamp(3.875rem, 5.875vw, 5.875rem);
+    font-family: var(--secondary--font);
+    color: #fff;
+    font-weight: 400;
+}
+
+.slider--conatiner p{
+    color: #fff;
+}
+
+.slider--conatiner .cta--btn{
+    padding: 4rem 0;
+}
+
+.custom-pagination .custom-bullet {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 999;
+    position: relative;
+    opacity: 1;
+}
+  
+.custom-pagination .swiper-pagination-bullet-active {
+    background: #27cee2;
+}
+
+.slider--image {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 2.1875rem;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.slider--conatiner .swiper-pagination-fraction, 
+.slider--conatiner .swiper-pagination-custom, 
+.slider--conatiner .swiper-horizontal > .slider--conatiner .swiper-pagination-bullets, 
+.slider--conatiner .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+}
+
+.custom-pagination{
+    background: #081a2c;
+    padding: 3rem 0;
+    position: absolute;
+}
+
+@media (max-width:1440px) {
+    .hero--slider .bg {
+        background-position: top center;
+    }
+    .slider--image img {
+        width: 100%;
+    }
+}
+
+@media (max-width:1140px) {
+    .custom-pagination {
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width:768px) {
+    .slider--conatiner,
+    .hero--slider .bg  {
+        height: 65vh;
+    }
+    .up-arrow, .down-arrow {
+        height: 18.125rem;
+        top: 15vh;
+    }
+    .up-arrow {
+        left: 4vw;
+    }
+    .down-arrow{
+        right: 4vw;
+    }
+}
+
+@media (max-width:440px) {
+    .slider--conatiner h1 {
+        font-size: clamp(2.2rem, 5.875vw, 5.875rem);
+    }
+    .slider--conatiner .cta--btn {
+        padding: 2rem 0;
+    }
+    .slider--conatiner, .hero--slider .bg {
+        height: 55vh;
+    }
+    .custom-pagination {
+        padding: 1rem 0;
+    }
+    .custom-pagination .custom-bullet {
+        display: inline-block;
+        width: 0.75rem;
+        height: 0.75rem;
+        line-height: 0.75rem;
+    }
+    .up-arrow, .down-arrow {
+        height: 15.125rem;
+        top: 12vh;
+    }
+}

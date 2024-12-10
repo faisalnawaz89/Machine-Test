@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 16px;
+  --container: 1350px;
+  --margin--auto: 0 auto;
+  --primary--font: "Open Sans", sans-serif;
+  --secondary--font: "Orbitron", sans-serif;
+  --button--font: "Poppins", sans-serif;
+  --priamary--color:#08bfdd;
+  --secondary--color: #111212;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: inherit;
+  font-family: var(--button--font);
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--primary--font);
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--secondary--font);
+  font-weight: 400;
+}
+
+img{
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+ul{
+  list-style: none;
+}
+
+.container {
+  width: var(--container);
+  margin: var(--margin--auto);
+}
+
+.grid{
+  display: grid;
+}
+
+.flex{
+  display: flex;
+}
+
+.cta--btn a{
+  padding: 0.625rem 2.5rem 0.625rem 2.5rem;
+  color: #fff;
+  background: #111212;
+  display: inline-block;
+  font-weight: 200;
+}
+
+.pagetitle.page--title h2{
+  font-family: var(--secondary--font);
+  color: #fff;
+  text-align: center;
+}
+
+.main--menu{
+  display: none;
+}
+
+.space--between{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.space--center{
+  justify-content: center;
+  align-items: center;
+}
+
+.bg{
+  height: 100vh;
+  background-size: 100%;
+  position: relative;
+  background-position: bottom center;
+}
+
+.overlay{
+  position: absolute;
+  inset: 0;
+  background: rgb(1,60,71);
+  background: linear-gradient(90deg, rgba(1,60,71,1) 0%, rgba(9,213,232,1) 50%, rgba(18,96,130,1) 100%);
+  opacity: .8;
+}
+
+@media (max-width:1366px) {
+  :root{
+    --container: 1270px;
+  }
+}
+
+@media (max-width:1140px) {
+  :root{
+    --container: 1024px;
+  }
+}
+
+@media (max-width:1024px) {
+  :root{
+    --container: 920px;
+  }
+  .bg {
+    background-size: cover;
+  }
+}
+
+@media (max-width:768px) {
+  :root{
+    --container: 100%;
+  }
+}
+
+@media (max-width:440px) {
+  .container {
+    padding: 0 4%;
+  }
+  .pagetitle.page--title h2 {
+    font-size: 1.2rem;
+    padding: 0 2rem;
+  }
+}
