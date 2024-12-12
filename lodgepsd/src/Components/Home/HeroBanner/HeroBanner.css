@@ -1,0 +1,131 @@
+.herobanner.hero--banner {
+    position: relative;
+    padding-bottom: 10rem;
+}
+
+.hero--banner .bg{
+    background-image: url(../../Assets/slider-bg.png);
+    height: 92vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2%;
+}
+
+.hero--banner .swiper-slide.swiper-slide-prev {
+    opacity: 0 !important;
+}
+
+.slider--container {
+    grid-template-columns: auto auto;
+    grid-gap: 6rem;
+    justify-content: center;
+    align-items: end;
+}
+
+.slider--title .pagetitle.page--title p{
+    max-width: 36.5625rem;
+}
+.slider--title a{
+    display: inline-block;
+    margin-top: 4rem;
+}
+
+.vertical--title{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+}
+
+.vertical--title h4{
+    font-size: clamp(.875rem, 1vw, 1rem);
+    color: #eaeaea;
+    font-weight: 400;
+    letter-spacing: -0.25rem;
+    position: relative;
+}
+
+.left--slider--title,
+.right--slider--title{
+    position: relative;
+}
+
+.right--slider--title::before,
+.right--slider--title::after,
+.left--slider--title::before,
+.left--slider--title::after{
+    content: '';
+    position: absolute;
+    width: 0.0625rem;
+    height: 4.375rem;
+    right: 0.6875rem;
+    left: auto;
+    top: -45%;
+    background: #eaeaea;
+}
+
+.left--slider--title::after,
+.right--slider--title::after{
+    left: auto;
+    right: 0.75rem;
+    top: 105%;
+}
+
+.hero--banner .round--sphere{
+    position: absolute;
+    top: 65%;
+    left: -6.125rem;
+}
+
+@media (max-width:1140px) {
+    .slider--container {
+        grid-gap: 2rem;
+    }
+    .vertical--title h4 {
+        left: -3px;
+        top: 4px;
+    }
+}
+
+@media (max-width:1024px) {
+    .hero--banner .bg {
+        height: 70vh;
+    }
+    .herobanner.hero--banner {
+        padding-bottom: 5rem;
+    }
+    .hero--banner .round--sphere {
+        left: -9.125rem;
+    }
+}
+
+@media (max-width:768px) {
+    .slider--container {
+        grid-template-columns: 100%;
+    }
+    .slider--image img {
+        width: 40%;
+        margin: auto;
+    }
+    .slider--title {
+        order: 1;
+    }
+    span.right--slider--title.vertical--title {
+        left: -2.0625rem;
+    }
+}
+
+@media (max-width:440px) {
+    .hero--banner .bg {
+        height: 80vh;
+    }
+    .herobanner.hero--banner {
+        padding-bottom: 0rem;
+    }
+}
+
+

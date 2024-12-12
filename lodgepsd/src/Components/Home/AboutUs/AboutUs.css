@@ -1,0 +1,52 @@
+.aboutus.about--us{
+    position: relative;
+    padding: 10rem 0;
+}
+
+.grid.space--between.about--us--inner {
+    grid-template-columns: auto auto;
+}
+
+.about--us--inner .page--title h2{
+    margin-bottom: 3rem;
+}
+
+.about--us--inner .page--title p{
+    margin-bottom: 4rem;
+    padding: 0 14% 0px 0;
+    line-height: 2;
+}
+
+.about--us--inner .page--title a{
+    display: inline-flex;
+}
+
+.about--us--image .round--sphere{
+    position: absolute;
+    right: -7%;
+    top: 50%;
+}
+
+@media (max-width:1366px) {
+    .about--us--image .round--sphere {
+        right: -10%;
+    }
+}
+
+@media (max-width:768px) {
+    .grid.space--between.about--us--inner {
+        grid-template-columns: 100%;
+    }
+    .about--us--inner  .pagetitle.page--title{
+        order:1
+    }
+    .aboutus.about--us {
+        padding: 5rem 0;
+    }
+}
+
+@media (max-width:440px) {
+    .about--us--image .round--sphere {
+        right: -30%;
+    }
+}

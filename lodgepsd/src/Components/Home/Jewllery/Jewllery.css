@@ -1,0 +1,57 @@
+
+.jewllery--block{
+    background: #f8f8f8;
+    padding: 5rem 0;
+    text-align: center;
+}
+.jweller--product{
+    text-align: center;
+    padding: 6vh 0 6vh;
+}
+
+.jewllery--block h2{
+    text-align: left;
+}
+
+.jweller--product--card {
+    background: #fff;
+    padding: 3.125rem 3.125rem 1.875rem;
+}
+
+.jweller--product--card img{
+    margin: 12vh auto;
+}
+
+.jweller--product--card a{
+    border: 2px solid #000;
+    padding: 5px 18px;
+    font-size: .875rem;
+    color: var(--primary--color);
+    font-weight: 500;
+}
+
+@media (max-width:1140px) {
+    .jweller--product--card {
+        padding: 3.125rem 1.3rem 1.875rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .jweller--product--card {
+        padding: 2.125rem 0.4rem 1.875rem;
+    }
+}
+
+@media (max-width:768px) {
+    .jweller--product--card {
+        border: 6px solid #f8f8f8;
+    }
+}
+
+@media (max-width:440px) {
+    .jweller--product {
+        padding: 3vh 0 6vh;
+        flex-direction: column;
+        align-items: normal;
+    }
+}

@@ -1,0 +1,129 @@
+.main--footer{
+    position: relative;
+    background: #363636;
+    padding: 5rem 0 0;
+    overflow: hidden;
+}
+
+.footer--logo{
+    position: absolute;
+    top: -100px;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.footer--logo img{
+    margin-top: 5rem;
+}
+
+.grid.space--between.footer-info {
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vh 8vw 5vh;
+}
+
+.footer-info--block {
+    grid-gap:.8rem;
+}
+
+.footer-info--block a{
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer--newlatter h5,
+.footer--social h5{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+span.divider {
+    width: 1.875rem;
+    display: block;
+    height: 0.25rem;
+    background: var(--secondary--color);
+    border-radius: 1.5625rem;
+    margin: auto;
+}
+
+.newsletter--input {
+    max-width: 37.5rem;
+    margin: auto;
+    text-align: center;
+}
+
+.newsletter--input input{
+    width: 100%;
+    height: 2.5rem;
+    border: 0;
+    outline: 0;
+    padding: 0 0.9375rem;
+    margin: 3vh 0px;
+}
+
+.newsletter--input button{
+    background: rgb(188, 136, 61);
+    background: linear-gradient(359deg, rgba(188, 136, 61, 1) 0%, rgba(251, 147, 10, 1) 50%, rgba(245, 228, 123, 1) 100%);
+    border: 0;
+    color: #fff;
+    font-family: var(--secondary--font);
+    font-size: 1.2rem;
+    padding: .5rem 2.75rem;
+    border-radius: 3.125rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.footer--social {
+    margin-top: 5rem;
+}
+
+.social--icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: 1rem 0;
+}
+
+.social--icons a {
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem;
+}
+
+.footer--copyright{
+    background: #323131;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #3e3e3e;
+}
+
+.footer--copyright p{
+    text-align: center;
+    color: #fff;
+    font-size: .875rem;
+}
+
+@media (max-width:440px) {
+    .footer-info--block a {
+        display: none;
+    }
+    .grid.space--between.footer-info {
+        justify-content: space-evenly;
+    }
+}

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 16px;
+  --conatiner:1200px;
+  --conatiner--space:0 15px;
+  --margin--auto:0 auto;
+  --primary--color:#121212;
+  --secondary--color:#fbb534;
+  --primary--font: "Poppins", serif;
+  --secondary--font:"Open Sans", serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {text-decoration: inherit;transition: all .2s ease-in;font-size: 1rem;font-family: var(--secondary--font);font-weight: 300;}
+
+
+body {
+  line-height: 1.5;
+  font-family: var(--primary--font);
+  color: var(--primary--color);
+  overflow-x: hidden;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.grid{
+  display: grid;
+}
+
+.flex{
+  display: flex;
+}
+
+.space--center{
+  justify-content: center;
+  align-items: center;
+}
+
+.space--between{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.space--start{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.space--end{
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.container{
+  width: var(--conatiner);
+  margin: var(--margin--auto);
+  padding: var(--conatiner--space);
+}
+
+.pagetitle.page--title h2{
+  font-size: clamp(1.9rem, 2.5vw, 2.5rem);
+  font-weight: 400;
+}
+
+.pagetitle.page--title h1{
+  font-size: clamp(3.5rem,5.5vw, 5.5rem);
+  text-transform: uppercase;
+}
+
+.cta--btn a{
+  padding: 10px 55px 10px 55px;
+  color: #fff;
+  background: var(--primary--color);
+  display: inline-block;
+}
+
+.round--sphere{
+  width: 12.25rem;
+  height: 12.25rem;
+  background: rgb(188, 136, 61);
+  background: linear-gradient(90deg, rgba(188, 136, 61, 1) 0%, rgba(251, 147, 10, 1) 50%, rgba(245, 228, 123, 1) 100%);
+  border-radius: 50%;
+  transform: rotate(-30deg);
+}
+
+.mobile--menu{
+  display: none;
+}
+
+@media (min-width:1600px) {
+  .wrapper{
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+
+@media (max-width:1140px) {
+  :root {
+    --conatiner:1024px;
+  }
+}
+
+
+@media (max-width:1024px) {
+  :root {
+    font-size: 15px;
+    --conatiner:920px;
+  }
+}
+
+@media (max-width:768px) {
+  :root {
+    --conatiner:100%;
+  }
+}
+
