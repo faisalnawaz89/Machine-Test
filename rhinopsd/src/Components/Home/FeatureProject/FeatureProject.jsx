@@ -25,7 +25,7 @@ const FeatureProject = () => {
                     spaceBetween={20}
                     slidesPerView={3}
                     loop={true}
-                    modules={[Navigation]}
+                    modules={[Navigation, Autoplay]}
                     autoplay={{delay:3000, disableOnInteraction:false}}
                     navigation={{prevEl:'.feature-nav-left', nextEl:'.fetaure-nav-right'}}
                     breakpoints={{440:{slidesPerView:1},640:{slidesPerView:1},768:{slidesPerView:2},1024:{slidesPerView:3}}}>

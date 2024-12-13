@@ -107,6 +107,10 @@ a{
   color: var(--primary--color);
 }
 
+.mobile-tab{
+  display: none;
+}
+
 @media (min-width:1600px) {
   .wrapper{
     position: relative;
@@ -131,8 +135,5 @@ a{
 @media (max-width:768px) {
   :root{
     --container:100%;
-  }
-  .mobile-tab{
-    display: none;
   }
 }
