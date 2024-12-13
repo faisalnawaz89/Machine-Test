@@ -1,0 +1,31 @@
+.aboutus.about--us {
+    padding: 10rem 0;
+}
+
+.about--us--block{
+    grid-template-columns: auto auto;
+    grid-gap: 4rem;
+}
+
+.about--us--title p{
+    line-height: 1.7;
+    margin-top: 2.8125rem;
+    margin-bottom: 3rem;
+}
+
+.about--us--title .cta--btn a{
+    background: var(--primary--color);
+    color:#fff;
+}
+
+@media (max-width:440px) {
+    .about--us--block {
+        grid-template-columns: 100%;
+    }
+    .about--us--title {
+        order: 1;
+    }
+    .aboutus.about--us {
+        padding: 6rem 0;
+    }
+}

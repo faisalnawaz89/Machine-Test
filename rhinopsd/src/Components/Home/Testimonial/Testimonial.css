@@ -1,0 +1,111 @@
+.testimonials--block{
+    background: #161825;
+    padding-top: 5rem;
+}
+
+.testimonials--block .pagetitle.page--title h2,
+.testimonials--block .pagetitle.page--title p{
+    color: #fff;
+    text-align: center;
+}
+
+.testimonials--container {
+    position: relative;
+    max-width: 750px;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.testimonials--body h5{
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--primary--font);
+    margin-bottom: 1rem;
+}
+
+.client--img {
+    position: absolute;
+    width: 6.875rem;
+    left: 5rem;
+}
+
+.client--img img{
+    position: relative;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    width: 100%;
+}
+
+.testimonials--header {
+    position: relative;
+    background: var(--secondary--color);
+    height: 3.75rem;
+    padding: 3rem 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+.testimonials--body {
+    background: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-top: 6rem;
+    padding-left: 5rem;
+    padding-bottom: 5rem;
+}
+
+.client--img::after,
+.client--img::before{
+    content: '';
+    position: absolute;
+    background-image: url(/src/Components/Assets/double-qoute.png);
+    width: 1.9375rem;
+    height: 1.625rem;
+    left: -2.5rem;
+    right: 0;
+    top: 2.75rem;
+}
+
+.client--img::before{
+    right: -40px;
+    left: auto;
+}
+
+.testimonials--arrow{
+    display: flex;
+    top: auto;
+    bottom: 0.9375rem;
+    position: absolute;
+    z-index: 9;
+    gap: .5rem;
+    left: 2.5rem;
+}
+
+.testimonials--arrow img{
+    width: 0.875rem;
+}
+
+.testimonial-nav-left,
+.testimonial-nav-right{
+    background: var(--primary--color);
+    width: 2.75rem;
+    height: 2.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.testimonial-nav-left{
+    background: var(--secondary--color);
+}
+
+@media (max-width:440px) {
+    .testimonials--body {
+        padding-left: 2rem;
+        padding-bottom: 6rem;
+    }
+}

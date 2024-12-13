@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 16px;
+  --container:1200px;
+  --margin--auto:0 auto;
+  --container--space: 0 15px;
+  --primary--font:"Open Sans", serif;
+  --heading--font:"Raleway", sans-serif;
+  --secondary--font:"Poppins", serif;
+  --primary--color: #161825;
+  --secondary--color: #fd9801;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  line-height: 1.5;
+  font-size: 1rem;
+  color: var(--primary--color);
+  font-family: var(--secondary--font);
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  transition: all .2s ease-in;
+}
+
+.grid{
+  display: grid;
+}
+
+.flex{
+  display: flex;
+}
+
+.space--between{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.space--center{
+  justify-content: center;
+  align-items: center;
+}
+
+.space--end{
+  justify-content: flex-end;
+  align-items: end;
+}
+
+.space--start{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.cta--btn a{
+  padding: 1rem 4rem 1rem 4rem;
+  display: inline-block;
+  border-radius: 0.25rem;
+}
+
+.container{
+  width: var(--container);
+  padding: var(--container--space);
+  margin: var(--margin--auto);
+}
+
+.bg{
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay{
+  background: var(--primary--color);
+  inset: 0;
+  position: absolute;
+  opacity: .7;
+}
+
+.pagetitle.page--title h2{
+  font-family: var(--heading--font);
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
+  color: var(--primary--color);
+}
+
+@media (min-width:1600px) {
+  .wrapper{
+    position: relative;
+    max-width: 1600px;
+    overflow: hidden;
+    margin: auto;
+  }
+}
+
+@media (max-width:1140px) {
+  :root{
+    --container:1024px;
+  }
+}
+
+@media (max-width:1024px) {
+  :root{
+    --container:922px;
+  }
+}
+
+@media (max-width:768px) {
+  :root{
+    --container:100%;
+  }
+  .mobile-tab{
+    display: none;
+  }
+}
