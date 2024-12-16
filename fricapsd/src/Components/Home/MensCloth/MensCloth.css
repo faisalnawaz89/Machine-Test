@@ -1,0 +1,96 @@
+
+.mens--cloth--inner {
+    grid-template-columns: auto auto;
+    border: 2px solid #eee;
+    padding: 5.625rem 3.75rem 0;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+}
+
+.mens--cloth--title h3 {
+    color: #252424;
+    font-size: clamp(3.5rem, 4.563vw, 4.563rem);
+    text-transform: uppercase;
+    max-width: 44rem;
+    line-height: 1;
+}
+
+.mens--cloth--title p{
+    color: #252424;
+    max-width: 30rem;
+    padding: 1.875rem 0;
+}
+
+.mens--cloth--title .cta--btn a{
+    display: inline-block;
+    padding: 0.8125rem 0;
+}
+
+.mens--cloth--image{
+    background-image: url(../../Assets/mens-cloth-sample.png);
+    min-width: 915px;
+    height: max(45vh, 432px);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+@media (max-width:1440px) {
+    .mens--cloth--inner {
+        grid-template-columns: auto 50%;
+    }
+    .mens--cloth--image {
+        min-width: 660px;
+        height: max(40vh, 370px);
+    }
+}
+
+@media (max-width:1366px) {
+    .mens--cloth--inner {
+        grid-template-columns: auto 45%;
+    }
+    .mens--cloth--image {
+        min-width: 525px;
+        height: max(40vh, 370px);
+    }
+}
+
+@media (max-width:1140px) {
+    .mens--cloth--image {
+        min-width: 440px;
+    }
+    .mens--cloth--inner {
+        padding: 3.75rem 3.75rem 0;
+    }
+}
+
+@media (max-width:1024px) {
+    .mens--cloth--image {
+        min-width: 390px;
+    }
+}
+
+@media (max-width:768px) {
+    .mens--cloth--inner {
+        grid-template-columns: 100%;
+    }
+    .mens--cloth--image {
+        min-width: 525px;
+        height: max(25vh, 274px);
+    }
+}
+
+@media (max-width:440px) {
+    .mens--cloth--inner {
+        padding: 1.75rem 1.75rem 0;
+    }
+    .mens--cloth--title h3 {
+        font-size: clamp(2rem, 4.563vw, 4.563rem);
+        max-width: inherit;
+        line-height: 1.2;
+    }
+    .mens--cloth--image {
+        min-width: 346px;
+        height: max(10vh, 195px);
+    }
+}

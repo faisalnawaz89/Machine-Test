@@ -1,0 +1,43 @@
+.laptop--computer--slider .product--info {
+    padding: 1.5625rem 1.5625rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.laptop--computer--container {
+    border: 2px solid #eee;
+    padding: 2.5rem 5.625rem;
+    margin-bottom: 4rem;
+}
+
+.laptop--computer--slider img{
+    margin: auto;
+    width: 18rem;
+    height: 21.25rem;
+    object-fit: contain;
+}
+
+.laptop--computer--slider .product--name h3 {
+    padding: 0 0 1rem;
+}
+
+.laptop--computer--slider .cta--btn{
+    margin-top: 2rem;
+}
+
+@media (max-width:1140px) {
+    .laptop--computer--slider img {
+        width: 12rem;
+        height: 14.25rem;
+    }
+    .laptop--computer--slider .product--info {
+        gap: 0;
+    } 
+}
+
+@media (max-width:1024px) {
+    .laptop--computer--container{
+        padding: 2.5rem 0;
+    }
+}

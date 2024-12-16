@@ -1,0 +1,126 @@
+.categoryslider.category--slider {
+    padding: 5rem 0;
+}
+
+.product--category {
+    background: var(--primary--color);
+    padding: 2rem 0;
+}
+
+.category--items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.category--items h2{
+    text-transform: uppercase;
+}
+
+.category--items ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+
+.category--items ul li a,
+.category--items h2{
+    color: #fff;
+}
+
+.category--slider--inner {
+    border: 2px solid #eee;
+}
+
+.product--name h3{
+    text-align: center;
+    padding: 2rem 0;
+    font-size: clamp(1.4rem, 1.875vh, 1.875rem);
+    text-transform: uppercase;
+    color: #2b2c31;
+}
+
+.product--img img{
+    margin: auto;
+    padding-bottom: 6rem;
+}
+
+.product--info {
+    justify-content: space-between;
+    padding: 1.5625rem 1.5625rem;
+}
+
+.flex.product--price {
+    gap: 2rem;
+}
+
+.product--info .cta--btn a{
+    padding: 0.3125rem 1rem 0.3125rem 1rem;
+    text-transform: capitalize;
+}
+
+.product--brand h4{
+    color: #2b2c31;
+    text-transform: uppercase;
+}
+
+.orignal--price h4{
+    color: var(--secondary--color);
+}
+
+.mrp--price h4{
+    color: #ababab;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+@media (max-width:1440px) {
+    .category--items,  
+    .category--items ul {
+        gap: 3rem;
+    }
+}
+
+@media (max-width:1366px) {
+    .flex.product--price {
+        gap: 1rem;
+    }
+}
+
+@media (max-width:1140px) {
+    .product--info {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.625rem;
+    }
+    .product--img img {
+        padding-bottom: 2rem;
+        width: 70%;
+    }
+}
+
+@media (max-width:1024px) {
+    .category--items ul {
+        display: grid;
+    }
+    .category--items ul {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .category--items{
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:440px) {
+    .category--items ul{
+        grid-template-columns: 100%;
+        gap: 1rem;
+    }
+    .category--items {
+        flex-direction: column;
+    }
+}

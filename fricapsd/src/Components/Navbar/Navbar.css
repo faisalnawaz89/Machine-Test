@@ -1,0 +1,82 @@
+.main--header{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.grid.space--between.main--header--block {
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.mobile-tab svg{
+    display: flex;
+}
+
+.user--icons {
+    gap: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.user--icons span{
+    display: flex;
+}
+
+.offcanvas--menu {
+    position: fixed;
+    display: flex;
+    background: var(--primary--color);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 20rem;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+    z-index: 9;
+    transform: translate(-450px, 0);
+}
+
+
+.offcanvas--menu--block nav ul li a{
+    color: #fff;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+
+.offcanvas--menu.open{
+    transform: translate(0px, 0);
+}
+
+.offcanvas--menu.open{
+    opacity: 1;
+}
+
+.mobile--tab--icon{
+    cursor: pointer;
+}
+
+.close--btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    cursor: pointer;
+}
+
+header.header.main--header {
+    padding: 1rem 0;
+}
+
+@media (max-width:440px) {
+    .user--icons {
+        gap: 0.5rem;
+    }
+    .user--icons span svg{
+        width: 1.5rem;
+    }
+    .offcanvas--menu {
+        min-width: 12rem;
+    }
+}

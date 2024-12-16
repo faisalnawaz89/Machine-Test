@@ -1,0 +1,41 @@
+.women--cloth--block {
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.women--cloth--title h3{
+    color: #252424;
+    font-size: clamp(3.5rem, 4.563vw, 4.563rem);
+    text-transform: uppercase;
+    max-width: 44rem;
+    line-height: 1;
+}
+
+.women--cloth--title .cta--btn a{
+    display: inline-block;
+    padding: 0.8125rem 0;
+    margin-top: 3rem;
+}
+
+@media (max-width:440px) {
+    .women--cloth--block {
+        grid-template-columns: 100%;
+        grid-gap: 3rem;
+    }
+    .women--cloth--title {
+        order: 1;
+    }
+    .women--cloth--title h3 {
+        font-size: clamp(2rem, 4.563vw, 4.563rem);
+        text-align: center;
+    }
+    .women--cloth--title h3 br {
+        display: none;
+    }
+    .women--cloth--title .cta--btn {
+        text-align: center;
+    }
+}
+

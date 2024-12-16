@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 16px;
+  --container:1800px;
+  --container--space:0 15px;
+  --margin-auto: 0 auto;
+  --font: "Poppins", serif;
+  --primary--color: #143a51;
+  --secondary--color:#ff5d68;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  line-height: 1.5;
+  font-family: var(--font);
+  color: var(--primary--color);
+  font-size: 1rem;
+}
+
+.container{
+  max-width: var(--container);
+  padding: var(--container--space);
+  margin: var(--margin-auto);
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  transition: all .2s ease-in;
+}
+
+.grid{
+  display: grid;
+}
+
+.flex{
+  display: flex;
+}
+
+.space--between{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.space--center{
+  justify-content: center;
+  align-items: center;
+}
+
+.space--start{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.space--end{
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.cta--btn a{
+  padding: 1.0625rem 0px 1.0625rem 0;
+  min-width: 12rem;
+  color: #fff;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.primary--btn{
+  background: var(--primary--color);
+}
+
+.secondary--btn{
+  background: var(--secondary--color);
+}
+
+.primary--btn:hover,
+.secondary--btn:hover{
+  background: transparent;
+  border: 2px solid #ddd;
+  color: var(--primary--color);
+}
+
+.pagetitle.page--title h2 {
+  font-size: clamp(2rem, 2.188vw, 2.188rem);
+  text-align: center;
+  text-transform: uppercase;
+  color: #403f3f;
+  margin-bottom: 2rem;
+}
+
+@media (max-width:1600px) {
+  :root {
+      --container:1420px;
+  }
+}
+
+@media (max-width:1440px) {
+  :root {
+      --container:1366px;
+  }
+}
+
+@media (max-width:1366px) {
+  :root {
+      --container:1270px;
+  }
+}
+
+@media (max-width:1140px) {
+  :root {
+      --container:1024px;
+  }
+}
+
+@media (max-width:1024px) {
+  :root {
+      --container:940px;
+  }
+}
+
+@media (max-width:768px) {
+  :root {
+      --container:100%;
+  }
+}
+
+@media (max-width:440px) {
+  .pagetitle.page--title h2 {
+    font-size: clamp(1.5rem, 2.188vw, 2.188rem);
+  }
+}
