@@ -5,7 +5,7 @@ Below is the list of deployed projects with their respective live links:
 ## Vercel Deployments
 
 01. **Clean Cars**  
-   [https://cleancars.vercel.app/](https://cleancars.vercel.app/) ![Alt Text](https://github.com/faisalnawaz89/Machine-Test/blob/master/mockups/caraftpsd.jpg)
+   [https://cleancars.vercel.app/](https://cleancars.vercel.app/) 
 
 02. **COVID-19 Tracker**  
    [https://covid19-azure-one.vercel.app/](https://covid19-azure-one.vercel.app/)
