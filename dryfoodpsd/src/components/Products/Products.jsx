@@ -17,10 +17,10 @@ const Products = () => {
             <div className="divider"></div>
         </div>
         <div className="products--container products--boxes">
-        <Swiper spaceBetween={25} slidesPerView={4} navigation  autoplay={{
+        <Swiper spaceBetween={25} slidesPerView={1} navigation  autoplay={{
         delay: 3000, disableOnInteraction: false,}} modules={[Navigation, Autoplay]} 
         breakpoints={{
-            440: {
+            640: {
               slidesPerView: 1,
               spaceBetween: 0,
             },
