@@ -8,7 +8,7 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/navigation';
 import 'swiper/css'
-
+//Add SLider setting..
 const Products = () => {
   return (
     <div className='product product--block'>
