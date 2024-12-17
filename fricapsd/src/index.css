@@ -143,8 +143,12 @@ a{
   }
 }
 
-@media (max-width:440px) {
+@media (max-width:640px) {
   .pagetitle.page--title h2 {
     font-size: clamp(1.5rem, 2.188vw, 2.188rem);
+  }
+  .swiper {
+    width: 100%;
+    height: auto;
   }
 }
