@@ -60,7 +60,7 @@ footer.footer.main--footer {
     color: #fff;
     text-transform: uppercase;
     font-weight: 800;
-    top: auto;
+    top: 0;
     bottom: 2.8125rem;
     cursor: pointer;
 }
