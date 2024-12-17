@@ -11,7 +11,7 @@ const CategorySlider = () => {
     <div className='categoryslider category--slider'>
         <div className="container">
             <div className="category--slider--conatiner">
-                <Swiper spaceBetween={30} slidesPerView={3} autoplay={{delay:3000, disableOnInteraction:false}} modules={[Autoplay]}
+                <Swiper spaceBetween={30} slidesPerView={1} autoplay={{delay:3000, disableOnInteraction:false}} modules={[Autoplay]}
                 breakpoints={{640:{slidesPerView:1}, 768:{slidesPerView:2}, 1024:{slidesPerView:3}}}>
                     <SwiperSlide>
                         <div className="category--slider--inner">
