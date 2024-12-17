@@ -5,6 +5,7 @@ import product_img_3 from '../../Assets/product-img-3.png'
 import product_img_4 from '../../Assets/product-img-4.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
+import 'swiper/css'
 
 const CategorySlider = () => {
   return (
