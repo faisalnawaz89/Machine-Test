@@ -6,6 +6,7 @@ import product_img_7 from '../../Assets/product-img-7.png'
 import product_img_8 from '../../Assets/product-img-8.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
+import 'swiper/css'
 
 const LaptopComputer = () => {
   return (
@@ -15,8 +16,8 @@ const LaptopComputer = () => {
               <h2>Computers & Laptop</h2>
             </div>
             <div className="laptop--computer--container">
-                <Swiper slidesPerView={3} autoplay={{delay:3000, disableOnInteraction:false}} modules={[Autoplay]}
-                breakpoints={{440:{slidesPerView:1}, 680:{slidesPerView:1}, 768:{slidesPerView:2}, 1024:{slidesPerView:3}}}>
+                <Swiper spaceBetween={30} slidesPerView={1} autoplay={{delay:3000, disableOnInteraction:false}} modules={[Autoplay]}
+                breakpoints={{640:{slidesPerView:1}, 768:{slidesPerView:2}, 1024:{slidesPerView:3}}}>
                   <SwiperSlide>
                     <div className="laptop--computer--slider">
                         <img src={product_img_5} alt="" />

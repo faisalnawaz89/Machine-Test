@@ -16,7 +16,7 @@ const HeroSlider = () => {
             <div className="slider--container">
                 <Swiper 
                 autoplay={{delay:4000, disableOnInteraction:false}}
-                modules={[Navigation]}
+                modules={[Navigation, Autoplay]}
                 navigation={{prevEl:'.nav-left', nextEl:'.nav-right'}}
                 >
                     <SwiperSlide>
