@@ -12,7 +12,7 @@ const CategorySlider = () => {
         <div className="container">
             <div className="category--slider--conatiner">
                 <Swiper spaceBetween={30} slidesPerView={3} autoplay={{delay:3000, disableOnInteraction:false}} modules={[Autoplay]}
-                breakpoints={{440:{slidesPerView:1}, 540:{slidesPerView:1}, 768:{slidesPerView:2}, 1024:{slidesPerView:3}}}>
+                breakpoints={{640:{slidesPerView:1}, 768:{slidesPerView:2}, 1024:{slidesPerView:3}}}>
                     <SwiperSlide>
                         <div className="category--slider--inner">
                             <div className="product--name">
