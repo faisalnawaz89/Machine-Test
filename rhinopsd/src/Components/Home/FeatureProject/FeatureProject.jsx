@@ -23,12 +23,12 @@ const FeatureProject = () => {
                 <div className="feature--card--inner">
                     <Swiper
                     spaceBetween={20}
-                    slidesPerView={3}
+                    slidesPerView={1}
                     loop={true}
                     modules={[Navigation, Autoplay]}
                     autoplay={{delay:3000, disableOnInteraction:false}}
                     navigation={{prevEl:'.feature-nav-left', nextEl:'.fetaure-nav-right'}}
-                    breakpoints={{440:{slidesPerView:1},640:{slidesPerView:1},768:{slidesPerView:2},1024:{slidesPerView:3}}}>
+                    breakpoints={{640:{slidesPerView:1},768:{slidesPerView:2},1024:{slidesPerView:3}}}>
                         <SwiperSlide>
                             <div className="feature--card--bg">
                                 <img src={feature_img_1} alt="" />
