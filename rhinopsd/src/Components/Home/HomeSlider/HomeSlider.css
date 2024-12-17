@@ -89,6 +89,7 @@
     }
     .slider--title p {
         padding-right: 0%;
+        line-height: 1.5;
     }
     .slider--title .cta--btn a {
         background: var(--secondary--color);
