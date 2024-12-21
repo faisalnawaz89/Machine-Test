@@ -1,0 +1,39 @@
+.opening--job .bg{
+    background-image: url(../../Assets/job-opening.jpg);
+}
+
+.opening--job .overlay{
+    background: var(--secondary--color);
+}
+
+.opening--job--title--block {
+    grid-template-columns: 1fr 1fr;
+    padding: 10rem 0 5rem;
+    position: relative;
+}
+
+.opening--title h3,
+.opening--title p{
+    color: #fff;
+}
+
+.opening--title h3{
+    font-size: clamp(2.5rem, 3vw, 3rem);
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.opening--job .middle--box--btn {
+    justify-content: center;
+}
+
+@media (max-width:440px) {
+    .opening--job--title--block {
+        grid-template-columns: 100%;
+        padding: 5rem 0 5rem;
+        grid-gap: 2rem;
+    }
+    .opening--job .middle--box--btn {
+        justify-content: flex-start;
+    }
+}

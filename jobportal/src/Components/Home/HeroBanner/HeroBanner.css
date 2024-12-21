@@ -1,0 +1,130 @@
+.hero--banner .bg{
+    background-image: url(../../Assets/main-banner.jpg);
+}
+
+.hero--banner, 
+.hero--baneer--container {
+    position: relative;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero--banner--title h3{
+    text-align: left;
+    color: #fff;
+}
+
+.hero--banner--title h1{
+    text-align: left;
+    color: #fff;
+    font-size: clamp(3rem, 3.875vw, 3.875rem);
+    margin-top: 1rem;
+    line-height: 1;
+}
+
+.hero--banner--title  .cta--btn a:hover{
+    background: #0dcaf0;
+    color: #fff;
+}
+
+.hero--slider--form--container {
+    background: #7f73eb;
+    padding: 2.5rem;
+    border-radius: 0.625rem;
+}
+
+.flex.input--form--container {
+    gap: 1rem;
+    margin-top: 1.5625rem;
+}
+
+.hero--slider--form--container h2{
+    color: #fff;
+    font-size: clamp(2rem, 2.25vw, 2.25rem);
+}
+
+.user--icon,
+.location--icon{
+    display: flex;
+}
+
+.input--inner {
+    display: flex;
+    background: #fff;
+    width: 16.25rem;
+    height: 3rem;
+    padding: 0 0.75rem;
+    align-items: center;
+    border-radius: 1.5625rem;
+}
+
+.input--inner span svg{
+    padding: 3px;
+}
+
+.input--inner input{
+    outline: 0;
+    border: 0;
+    height: 3rem;
+    padding: 0 0.625rem;
+}
+
+.hero--slider--form--container button{
+    font-family: var(--font--secondary);
+    background: var(--primary--color);
+    margin-top: 1.5625rem;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+.hero--slider--form--container button:hover{
+    background: #0dcaf0;
+}
+
+.form--tags{
+    color: #fff;
+    padding: 1.5625rem 0 0;
+    align-items: baseline;
+}
+
+.form--tags h4{
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-right: 0.75rem;
+}
+
+@media (max-width:1024px) {
+    .flex.input--form--container {
+        flex-direction: column;
+    }
+    .input--inner {
+        width: 100%;
+    }
+    .input--inner input {
+        width: 85%;
+    }
+}
+
+@media (max-width:768px) {
+    .hero--baneer--container {
+        grid-template-columns: 100%;
+        grid-gap: 4rem;
+    }
+    .hero--banner .bg {
+        background-position: top center;
+    }
+}
+
+@media (max-width:440px) {
+    .hero--baneer--container {
+        padding: 5rem 0;
+    }
+    .form--tags {
+        gap: .5rem;
+    }
+    .keyword--tag {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+}

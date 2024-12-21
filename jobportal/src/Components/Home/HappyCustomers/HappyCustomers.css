@@ -1,0 +1,98 @@
+.happy--customer {
+    background: #f0f8ff;
+    padding: 6rem 0 5rem;
+    margin-top: 8rem;
+}
+.customer--block--slider {
+    background: #fff;
+    border-radius: 1.5625rem;
+    padding: 3.125rem 2.125rem;
+}
+
+.customer--container {
+    padding: 3rem 0;
+}
+
+.customer--block--inner {
+    grid-template-columns: auto auto;
+}
+
+.customer--block {
+    gap: 1rem;
+}
+
+.customer--block--img {
+    width: 4.0625rem;
+    height: 4.0625rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.3125rem solid #f0f8ff;
+}
+
+.customer--block--img img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.customer--title h4{
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.customer--title h6{
+    color: #717275;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.customer--testimonial p {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: #717275;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.customer--testimonial {
+    padding: 3.125rem 0px 0px 1.875rem;
+    position: relative;
+}
+
+.customer--testimonial::before {
+    content: '';
+    position: absolute;
+    inset: 1.875rem 0 0 0;
+    background-image: url('../../Assets/left-quote.png');
+    width: 3rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: .085;
+    z-index: 1;
+}
+
+.customer--container .swiper-pagination {
+    position: relative;
+}
+
+.customer--container .swiper-horizontal > .swiper-pagination-bullets, 
+.customer--container .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -40px;
+    top: auto;
+    height: 70px;
+}
+
+.customer--container .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 4px solid #fff;
+    opacity: 1;
+    box-shadow: 0 0 8px 0px #00000017;
+    transition: all .5s ease-in;
+}
+
+.customer--container .swiper-pagination-bullet-active{
+    border: 4px solid var(--secondary--color);
+}

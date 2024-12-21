@@ -1,0 +1,91 @@
+.recent--job{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.recent--job .cta--btn.main--big--btn a {
+    margin-top: 4rem;
+    display: inline-block;
+    font-size: clamp(1.2rem, 1.7vw, 1.7rem);
+    padding: 1.25rem 3.4375rem;
+}
+
+.recent--job .pagetitle.page--title h2,
+.recent--job .pagetitle.page--title p{
+    text-align: left;
+}
+
+.recent--job .pagetitle.page--title p{
+    padding-right: 50%;
+}
+
+.recent--job--conatiner{
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap:2.5rem;
+    margin-top: 3rem;
+}
+
+.recent--job--inner {
+    border: 1px solid #e9eaeb;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.recent--info h3{
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    text-align: left;
+    font-weight: 600;
+}
+
+.recent--job--company--icon{
+    width: 2.8125rem;
+    height: 2.8125rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    border-radius: 50%;
+    background: #fff;
+    padding: 0.5rem;
+}
+
+.recent--job--image{
+    position: relative;
+}
+
+.recent--job-tags {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.5625rem;
+}
+
+
+.recent--info {
+    padding: 1.5625rem 1.5625rem;
+}
+
+.recent--job--company {
+    gap: 1rem;
+}
+
+.recent--job--tags {
+    align-items: center;
+    gap: .5rem;
+}
+
+.recent--job--tags span svg{
+    fill: var(--primary--color)!important
+}
+
+.recent--job--information {
+    padding: 1.75rem 0 1rem;
+    border-bottom: 1px solid #e9eaeb;
+    margin-bottom: 1.875rem;
+}
+
+.recent--job--apply--btn {
+    margin-bottom: 0.9375rem;
+}
+
+@media (max-width:440px) {
+    .recent--job .pagetitle.page--title p {
+        padding-right: 0;
+    }
+}

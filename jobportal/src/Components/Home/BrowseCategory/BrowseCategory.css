@@ -1,0 +1,241 @@
+.browse--category {
+    padding: 6rem 0;
+}
+
+.browse--category--icons {
+    padding: 2.5rem 0 7.5rem;
+}
+
+.browse--category--icon {
+    grid-gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.browse--category--icon--box{
+    position: relative;
+    background: var(--primary--color);
+    width: 9.375rem;
+    height: 9.375rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.5rem solid #7f73eb;
+    transition: all .5s ease-in;
+    box-shadow: 0 0 20px 0px #0000004a;
+    cursor: pointer;
+}
+
+.browse--category--icon--box:hover{
+    border-color: #fff;
+}
+
+.browse--category--icon--box span svg{
+    fill: rgb(255 255 255) !important;
+}
+
+.browse--category--icon--box h5{
+    font-weight: 400;
+    color: #fff;
+}
+
+.browse--category--icon--box .category--number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #0dcaf0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.job--showcase {
+    grid-template-columns: 25% auto 25%;
+    grid-gap: 1.5rem;
+}
+
+.featured--job--middle {
+    background: #0dcaf0;
+    padding: 3.75rem;
+}
+
+.featured--job--middle--content h2{
+    color: #fff;
+    font-size: clamp(2.5rem, 3vw, 3rem);
+    font-family: var(--font--secondary);
+    font-weight: 600;
+    text-align: left;
+    line-height: 1;
+}
+
+.featured--job--middle--content p{
+    font-family: var(--font--secondary);
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.featured--job--middle--content .cta--btn{
+    margin-top: 3rem;
+}
+
+.middle--box--btn .border--btn{
+    border-color: #fff;
+    color: #fff;
+    padding: .8rem 1.5rem;
+}
+
+.middle--box--btn .cta--btn{
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.middle--box--btn .border--btn:hover{
+    background: #fff;
+    color: #f65129;
+}
+
+.middle--box--btn .liner--btn{
+    position: relative;
+    color: #fff;
+    padding: 0;
+    display: inline-flex;
+}
+
+.middle--box--btn .liner--btn::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    bottom: 0;
+    right: 0;
+    transition: all .5s cubic-bezier(0.9, 0.14, 0.58, 1);
+}
+
+.middle--box--btn .liner--btn:hover::after{
+    right: auto;
+    width: 100%;
+}
+
+.featured--job--image--inner {
+    position: relative;
+    height: 100%;
+}
+
+.featured--job--image--inner img {
+    position: relative;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured--job--name--title {
+    position: absolute;
+    bottom: 1.25rem;
+    background: var(--primary--color);
+    right: 1.25rem;
+    padding: 1.875rem 1.25rem;
+    border-radius: 1.875rem;
+    overflow: hidden;
+}
+
+.name--title--box h4{
+    font-family: var(--font--secondary);
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    top: 0.625rem;
+}
+
+.name--title--box h5{
+    color: #fff;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.name--title--box {
+    position: relative;
+}
+
+.name--title--box--header {
+    height: 2rem;
+    background: #0dcaf0;
+    position: absolute;
+    top: -1.9375rem;
+    left: -1.5rem;
+    right: -1.5rem;
+}
+
+.left--border img{
+    border-top-left-radius: 1.5625rem;
+    border-bottom-left-radius: 1.5625rem;
+}
+
+.right--border img{
+    border-top-right-radius: 1.5625rem;
+    border-bottom-right-radius: 1.5625rem;
+}
+
+.featured--job--icon {
+    position: absolute;
+}
+
+.featured--job--right .right--border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured--job--icon-inner .cta--btn {
+    line-height: 1.1;
+}
+
+.featured--job--icon-inner .cta--btn a{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+@media (max-width:1140px) {
+    .browse--category--icon {
+        grid-gap: 2rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .featured--job--middle {
+        padding: 2.5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .browse--category--icon {
+        flex-wrap: wrap;
+    }
+
+    .job--showcase {
+        grid-template-columns: 100%;
+    }
+
+    .left--border img,
+    .right--border img{
+        border-radius: 0;
+    }
+    .browse--category--icon--box {
+        width: 10.375rem;
+        height: 10.375rem;
+    }
+}
