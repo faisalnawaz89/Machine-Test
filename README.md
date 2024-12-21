@@ -45,6 +45,9 @@ Below is the list of deployed projects with their respective live links:
 03. **Firca Website**  
     [https://firca.onrender.com/](https://firca.onrender.com/)
 
+04.**Job Portal Website**  
+    [https://jobportal-wl3w.onrender.com/](https://jobportal-wl3w.onrender.com/)
+
 ## Netlify Deployments
 
 01. **iGlasses**  
