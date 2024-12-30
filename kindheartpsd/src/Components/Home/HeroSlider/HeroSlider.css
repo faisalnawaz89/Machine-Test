@@ -1,0 +1,103 @@
+.slides {
+    position: relative;
+    min-height: 41.8125rem;
+    width: 100%;
+    background-size: cover;
+}
+
+.slider-1{
+    background-image: url(../../Assets/slide-1.jpg);
+}
+
+.slider-2{
+    background-image: url(../../Assets/slide-2.jpg);
+}
+
+.slider-3{
+    background-image: url(../../Assets/slide-3.jpg);
+}
+
+.slides--caption{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 42.5rem;
+    text-align: right;
+    float: right;
+    min-height: 42.5rem;
+    justify-content: end;
+    position: relative;
+    z-index: 999999;
+    background: var(--color--white);
+    clip-path: polygon(100% 100%, 100% 9.375rem, 0px 100%);
+    padding: 4.0625rem 4.375rem;
+}
+
+.slides--caption h1{
+    font-size: clamp(2.5rem, 3.25vw, 3.25rem);
+    font-weight: 800;
+}
+
+.slider--navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    padding: 0 6.875rem;
+}
+
+.nav-arrow-left,
+.nav-arrow-right{
+    width: 5.3125rem;
+    height: 5.3125rem;
+    border-radius: 50%;
+    background: var(--secondary--color);
+    padding: 0.9375rem;
+    transition: all .2s ease-in;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.main--slider:hover .nav-arrow-left, 
+.main--slider:hover .nav-arrow-right{
+    opacity: 1;
+}
+
+.nav-arrow-left:hover,
+.nav-arrow-right:hover{
+    background: var(--primary--color);
+}
+
+@media (max-width:768px) {
+    .slides, .slides--caption {
+        min-height: 35rem;
+    }
+    .nav-arrow-left, .nav-arrow-right {
+        width: 3.3125rem;
+        height: 3.3125rem;
+    }
+    .slider--navigation {
+        padding: 0px 3.875rem;
+    }
+}
+
+@media (max-width:440px){
+    .slider--navigation {
+        padding: 0px 0.875rem;
+    }
+    .slides--caption {
+        min-width: 100%;
+        text-align: center;
+        float: right;
+        clip-path: polygon(34% 57%, 66% 57%, 100% 72%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 74%);
+        padding: 4.0625rem 0.375rem;
+    }
+}
+
+
+
+

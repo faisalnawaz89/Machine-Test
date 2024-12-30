@@ -1,0 +1,103 @@
+.getintouch{
+    padding: 6rem  0;
+}
+
+.get--in--touch{
+    grid-template-columns: auto auto;
+    grid-gap: 10rem;
+}
+
+.getintouch .pagetitle.page--title h2{
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.info--img{
+    gap: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.info--img img{
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info--details{
+    gap: .5rem;
+    margin-bottom: .7rem;
+}
+
+.info--details a{
+    color: #717275;
+}
+
+.contact--info h4{
+    margin-bottom: 1.5rem;
+}
+
+.contact--info .cta--btn a{
+    padding: 1rem 0;
+    min-width: 11rem;
+    margin-top: 1.5rem;
+}
+.get--in--touch--formfield {
+    margin-top: 1rem;
+}
+
+.get--in--touch--block,
+.get--in--touch--form {
+    padding: 2.5rem;
+}
+
+.get--in--touch--form{
+    background: var(--bg--color);
+    border-radius: 0.625rem;
+}
+
+.get--in--touch--form .pagetitle.page--title h2{
+    margin-bottom: 1rem;
+}
+
+.get--in--touch--formfield input,
+.get--in--touch--formfield textarea{
+    height: 50px;
+    padding: 0 0.9375rem;
+    border: 0;
+    outline: 0;
+    font-family: var(--secondary--font);
+    font-size: 1rem;
+    outline: 0;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.get--in--touch--formfield textarea{
+    padding-top: 0.9375rem;
+    height: 9.375rem;
+}
+
+.get--in--touch--formfield .cta--btn button{
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .get--in--touch {
+        grid-gap: 0rem;
+    }
+}
+
+@media (max-width:440px) {
+    .get--in--touch {
+        grid-template-columns: 100%;
+        grid-gap: 2rem;
+    }
+    .get--in--touch--block, .get--in--touch--form {
+        padding: 1.125rem;
+    }
+}

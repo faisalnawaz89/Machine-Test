@@ -1,0 +1,124 @@
+.ourstory.our--story {
+    background: var(--bg--color);
+    padding: 6rem 0;
+}
+
+.our--story--block--canvas {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem
+}
+
+.our--story--group--title{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.count--down--inner{
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.our--story--group--title h4{
+    margin-bottom: 1rem;
+}
+
+.our--story--group--title h2{
+    text-align: left !important;
+    margin-bottom: 1rem;
+}
+
+.our--story--title,
+.our--misiion,
+.count--down {
+    background: var(--color--white);
+    border-radius: 1.25rem;
+    padding: 2.5rem;
+    min-height: 17.125rem;
+}
+
+.cross--check span{
+    background: var(--bg--color);
+    display: flex;
+    padding: 0.25rem;
+    border-radius: 50%;
+    width: 1.625rem;
+    height: 1.625rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cross--check span svg {
+    width: 1.25rem;
+    fill: var(--secondary--color) !important;
+}
+
+.cross--check h5,
+.big--digit span{
+    font-size: 1rem;
+    color: var(--secondary--color);
+    font-weight: 400;
+}
+
+.cross--check {
+    gap: .7rem;
+}
+
+.cross--check:not(:last-child) {
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+}
+
+.big--digit {
+    font-size: clamp(2.5rem, 3.25vw, 3.25rem);
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    color: var(--primary--color);
+    margin-bottom: 0!important;
+}
+
+.big--digit:not(:last-child) {
+    margin-bottom: 1rem!important;
+}
+
+.our--story--block--image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.our--story--block--image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@media (max-width:1024px) {
+    .our--story--block--canvas {
+        grid-template-columns: 100%;
+    }
+    .our--story--title, .our--misiion, .count--down {
+        min-height: 15.125rem;
+    }
+}
+
+@media (max-width:440px) {
+    .count--down--inner{
+        grid-template-columns:100%
+    }
+    .our--story--title, .our--misiion, .count--down {
+        min-height: auto;
+    }
+    .count--down {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .big--digit:not(:last-child) {
+        margin-bottom: 0!important;
+    }
+}
+

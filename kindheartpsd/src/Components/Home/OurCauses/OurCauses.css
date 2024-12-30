@@ -1,0 +1,83 @@
+.our--causes{
+    padding: 6rem 0;
+}
+
+.cause--inner-card {
+    border-radius: 1.25rem;
+    overflow: hidden;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.cause--inner-card:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+}
+
+.cause--cards {
+    margin-top: 2rem;
+    gap: 1.5rem;
+}
+
+.cause--card--title--info {
+    padding: 1.875rem;
+}
+
+.cause--card--title--info p{
+    padding: 2rem 0;
+}
+
+.progress--bar {
+    width: 100%;
+    display: block;
+    background: #e9eaeb;
+    height: 0.3125rem;
+    border-radius: 3.125rem;
+    overflow: hidden;
+}
+
+.progress--bar span{
+    background: var(--secondary--color);
+    height: 0.3125rem;
+    display: block;
+}
+
+.progress--bar span.w80{
+    width: 80%;
+}
+
+.progress--bar span.w50{
+    width: 50%;
+}
+
+.progress--bar span.w90{
+    width: 99%;
+}
+
+.cause--data{
+    margin-top: 0.625rem;
+}
+
+.cause--data h5{
+    font-size: 1rem;
+    font-weight: 400!important;
+}
+
+.cause--inner-card .cta--btn a {
+    width: 100%;
+    border-radius: 0;
+    margin-top: 1.25rem;
+}
+
+@media (max-width:768px) {
+    .cause--cards {
+        gap: 1rem;
+    }
+}
+
+@media (max-width:440px) {
+    .cause--cards {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+

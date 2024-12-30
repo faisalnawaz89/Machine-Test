@@ -1,0 +1,66 @@
+.welcome.welcome--block {
+    padding: 5rem 0;
+}
+
+.welcome--boxes {
+    padding-top: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.welcome--box {
+    min-width: 20rem;
+    text-align: center;
+    border-radius: 1.25rem;
+    padding: 2.1875rem 0;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.welcome--box:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+}
+
+.welcome--inner--img img{
+    margin: auto;
+    transform: scale(1);
+    transition: all 0.5s;
+    margin-bottom: 2rem;
+}
+
+.welcome--box:hover img{
+    transform: scale(.75);
+    margin-bottom: 0;
+}
+
+.welcome--inner h4 {
+    font-weight: 300!important
+}
+
+.welcome--inner h4 span{
+    font-weight: 700;
+}
+
+@media (max-width:1140px) {
+    .welcome--box {
+        min-width: 16rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .welcome--inner--img img {
+        width: 35%;
+    }
+    .welcome--box {
+        min-width: 14rem;
+    }
+}
+
+@media (max-width:768px) {
+    .welcome--box {
+        min-width: 16rem;
+    }
+    .welcome--inner--img img {
+        width: 45%;
+    }
+}
