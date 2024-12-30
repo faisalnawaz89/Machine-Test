@@ -4,7 +4,7 @@ import cause_img_1 from '../../Assets/cause-img-1.jpg'
 import cause_img_2 from '../../Assets/cause-img-2.jpg'
 import cause_img_3 from '../../Assets/cause-img-3.jpg'
 
-export const OurCauses = () => {
+const OurCauses = () => {
   return (
     <div className='ourcauses our--causes'>
         <div className="container">
@@ -62,3 +62,5 @@ export const OurCauses = () => {
     </div>
   )
 }
+
+export default OurCauses
